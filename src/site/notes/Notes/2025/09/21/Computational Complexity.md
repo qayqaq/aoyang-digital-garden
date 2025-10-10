@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025/09/21/computational-complexity/"}
+{"dg-publish":true,"permalink":"/notes/2025/09/21/computational-complexity/","tags":["#computational-theory","#algorithms","#computer-science"]}
 ---
 
 #computational-theory #algorithms #computer-science
