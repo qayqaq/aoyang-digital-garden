@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025/10/06/quantum-chaos/","tags":["#quantum-mechanics","#chaos-theory","#physics","#complex-systems","gardenEntry"]}
+{"dg-publish":true,"permalink":"/notes/2025/10/06/quantum-chaos/"}
 ---
 
 
