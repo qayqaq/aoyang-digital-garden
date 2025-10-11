@@ -12,4 +12,7 @@ Here I document my learning and building adventure. Hope I can share my passion 
 * [[Notes/2025/09/21/Computational Complexity\|Computational Complexity]].
 * [[Notes/2025/10/06/Foundational Principles of Quantum Mechanics\|Quantum Mechanics]].
 * [[Notes/2025/09/05/Riemannian Geometry\|Riemannian Geometry]].
+* [[Notes/2025/10/11/Computer Network\|Computer Network]].
+* [[Notes/2025/10/11/Web Development\|Web Development]].
+* [[Notes/2025/10/11/User Experience\|User Experience]].
 * ...
