@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025/10/13/gibbs-paradox/"}
+{"dg-publish":true,"permalink":"/notes/2025/10/13/gibbs-paradox/","tags":["#statistical_mechanics","#thermodynamics","#quantum_mechanics","#paradox"]}
 ---
 
 #statistical_mechanics #thermodynamics #quantum_mechanics #paradox

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025/10/13/bethe-ansatz/"}
+{"dg-publish":true,"permalink":"/notes/2025/10/13/bethe-ansatz/","tags":["#physics/condensed-matter","#quantum-mechanics","#integrable-systems","#statistical-mechanics"]}
 ---
 
 #physics/condensed-matter #quantum-mechanics #integrable-systems #statistical-mechanics

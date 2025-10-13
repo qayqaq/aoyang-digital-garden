@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025/10/13/lie-group/"}
+{"dg-publish":true,"permalink":"/notes/2025/10/13/lie-group/","tags":["#mathematics","#algebra","#geometry","#LieTheory","#physics"]}
 ---
 
 - A **Lie group** is a mathematical object that is simultaneously a **group** and a **smooth manifold**, where the group operations (multiplication and inversion) are smooth functions.

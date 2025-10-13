@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025/10/13/hubbard-stratonovich-transformation/"}
+{"dg-publish":true,"permalink":"/notes/2025/10/13/hubbard-stratonovich-transformation/","tags":["#Physics","#QuantumMechanics","#CondensedMatter","#ComputationalPhysics","#ManyBodyTheory"]}
 ---
 
 - The Hubbard-Stratonovich Transformation is a mathematical technique that converts a problem of interacting particles into an equivalent problem of non-interacting particles moving in a fluctuating "auxiliary" field.

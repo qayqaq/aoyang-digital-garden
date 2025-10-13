@@ -1,15 +1,15 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025/10/13/quantum-field-theory/"}
+{"dg-publish":true,"permalink":"/notes/2025/10/13/quantum-field-theory/","tags":["#physics/quantum-field-theory","#physics/quantum-mechanics","#physics/special-relativity","#theoretical-physics"]}
 ---
 
 #physics/quantum-field-theory #physics/quantum-mechanics #physics/special-relativity #theoretical-physics
 
 [[Quantum Field Theory.canvas\|Quantum Field Theory.canvas]]
 
--   **TLDR**: Quantum Field Theory (QFT) is the fundamental framework of modern physics that merges quantum mechanics with special relativity.
--   **TLDR**: It re-conceptualizes reality as being composed of underlying fields, where particles are merely localized excitations or "quanta" of these fields.
--   **TLDR**: QFT provides the mathematical language for the Standard Model of particle physics, describing all fundamental forces (except gravity) and elementary particles.
--   **TLDR**: It naturally explains phenomena that are impossible in non-relativistic quantum mechanics, such as the creation and annihilation of particles.
+- **TLDR**: Quantum Field Theory (QFT) is the fundamental framework of modern physics that merges quantum mechanics with special relativity.
+- **TLDR**: It re-conceptualizes reality as being composed of underlying fields, where particles are merely localized excitations or "quanta" of these fields.
+- **TLDR**: QFT provides the mathematical language for the Standard Model of particle physics, describing all fundamental forces (except gravity) and elementary particles.
+- **TLDR**: It naturally explains phenomena that are impossible in non-relativistic quantum mechanics, such as the creation and annihilation of particles.
 
 # Quantum Field Theory
 
@@ -19,8 +19,8 @@
 
 The development of QFT was driven by the need to resolve fundamental incompatibilities between quantum mechanics and Einstein's theory of special relativity.
 
-1.  **Limitations of Quantum Mechanics**: The original formulation of quantum mechanics, governed by the Schrödinger equation, is inherently non-relativistic. It treats time and space on different footings and does not conserve particle number in high-energy interactions where energy can be converted into matter ($E=mc^2$).
-2.  **Relativistic Invariance**: Special relativity demands that the laws of physics remain the same for all observers in uniform motion (Lorentz invariance). Early attempts to create a relativistic version of the Schrödinger equation, such as the Klein-Gordon and Dirac equations, led to perplexing issues like solutions with negative energy and probabilities that were not conserved.
+1. **Limitations of Quantum Mechanics**: The original formulation of quantum mechanics, governed by the Schrödinger equation, is inherently non-relativistic. It treats time and space on different footings and does not conserve particle number in high-energy interactions where energy can be converted into matter ($E=mc^2$).
+2. **Relativistic Invariance**: Special relativity demands that the laws of physics remain the same for all observers in uniform motion (Lorentz invariance). Early attempts to create a relativistic version of the Schrödinger equation, such as the [[Notes/2025/10/13/Klein-Gordon Equation\|Klein-Gordon Equation]] and [[Notes/2025/10/13/Dirac equation\|Dirac equation]], led to perplexing issues like solutions with negative energy and probabilities that were not conserved.
 
 The resolution to this conflict was revolutionary: instead of quantizing the properties of a single particle (like position and momentum), QFT **quantizes the field itself**. The wave function is promoted to a **field operator** that can create or destroy particles at any point in spacetime. This approach elegantly solves the previous problems and builds particle creation and annihilation into the very fabric of the theory.
 
@@ -28,18 +28,18 @@ The resolution to this conflict was revolutionary: instead of quantizing the pro
 
 ### Fields as the Fundamental Reality
 In QFT, the universe is filled with various fields, one for each type of elementary particle. For example:
--   An **electron field** permeates all of spacetime.
--   A **photon field** (the quantum version of the electromagnetic field) also exists everywhere.
--   Similarly, there are fields for quarks, gluons, the Higgs boson, and so on.
+- An **electron field** permeates all of spacetime.
+- A **photon field** (the quantum version of the electromagnetic field) also exists everywhere.
+- Similarly, there are fields for quarks, gluons, the Higgs boson, and so on.
 
 A field can be thought of as a collection of values at every point in spacetime. The value of the field at a particular point represents the potential for a particle to exist there.
 
 ### Quantization and Particles as Field Excitations
 The "quantum" aspect of QFT lies in the **quantization** of these fields. The energy of a field is not continuous but comes in discrete packets, or **quanta**. These quanta are what we observe as particles.
 
--   **Vacuum State**: The lowest energy state of a field is the **vacuum**, denoted as $|0\rangle$. This is not empty space but a sea of potential, with fields fluctuating quantum-mechanically.
--   **Particle Creation**: A particle is created when a discrete amount of energy is added to a field, causing an excitation. This is mathematically described by a **creation operator** ($a^\dagger$) acting on the vacuum state: $a^\dagger|0\rangle$.
--   **Particle Annihilation**: A particle is destroyed when its energy is removed from the field, described by an **annihilation operator** ($a$).
+- **Vacuum State**: The lowest energy state of a field is the **vacuum**, denoted as $|0\rangle$. This is not empty space but a sea of potential, with fields fluctuating quantum-mechanically.
+- **Particle Creation**: A particle is created when a discrete amount of energy is added to a field, causing an excitation. This is mathematically described by a **creation operator** ($a^\dagger$) acting on the vacuum state: $a^\dagger|0\rangle$.
+- **Particle Annihilation**: A particle is destroyed when its energy is removed from the field, described by an **annihilation operator** ($a$).
 
 > An analogy, though imperfect, is a calm pond representing the vacuum state of a field. A ripple on the pond's surface is like a particle—a localized excitation of the pond (the field). Multiple ripples can be created or destroyed, just like particles.
 
@@ -49,8 +49,6 @@ Forces in QFT are described as interactions between different fields. These inte
 For instance, the electromagnetic repulsion between two electrons is understood as the two electron fields interacting by exchanging quanta of the photon field. These exchanged particles are called **virtual particles** because they exist only for a brief moment, as allowed by the Heisenberg uncertainty principle, to mediate the force.
 
 **Feynman diagrams** are a powerful visual and mathematical tool used to represent and calculate the probabilities of these interactions. Each line and vertex in a diagram corresponds to a specific mathematical term in a complex calculation.
-
-![A simple Feynman diagram showing two electrons repelling each other by exchanging a virtual photon.](https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Feynmann_Diagram_for_Electron-Electron_Scattering.svg/300px-Feynmann_Diagram_for_Electron-Electron_Scattering.svg.png)
 
 ## The Mathematical Framework: Lagrangian and Action
 

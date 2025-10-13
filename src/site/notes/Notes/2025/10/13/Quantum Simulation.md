@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025/10/13/quantum-simulation/"}
+{"dg-publish":true,"permalink":"/notes/2025/10/13/quantum-simulation/","tags":["#quantum_computing","#quantum_mechanics","#computational_physics","#simulation"]}
 ---
 
 #quantum_computing #quantum_mechanics #computational_physics #simulation
@@ -9,13 +9,13 @@
 
 ## Introduction
 
-**Quantum simulation** is the practice of *using a controllable quantum system to study the behavior of another, less controllable or computationally intractable quantum system*. The concept, first proposed by physicist Richard Feynman in 1982, stems from a fundamental challenge: simulating quantum mechanics on a classical computer is extraordinarily difficult. The computational resources required to describe a quantum system grow exponentially with the number of particles, quickly overwhelming even the most powerful supercomputers.
+**Quantum simulation** is the practice of *using a controllable quantum system to study the behavior of another, less controllable or computationally intractable quantum system*. The concept, first proposed by physicist Richard Feynman in 1982, stems from a fundamental challenge: simulating [[Notes/2025/10/13/Quantum Mechanics\|quantum mechanics]] on a classical computer is extraordinarily difficult. The computational resources required to describe a quantum system grow exponentially with the number of particles, quickly overwhelming even the most powerful supercomputers.
 
 Feynman's insight was to turn this problem into a solution: "Nature isn't classical, dammit, and if you want to make a simulation of nature, you'd better make it quantum mechanical." A quantum simulator, therefore, is a special-purpose quantum computer designed to mimic the Hamiltonian (the operator corresponding to the total energy) of a target system. By preparing an initial state and observing the simulator's evolution, we can gain insights into complex quantum phenomena that are inaccessible through classical computation or direct experimentation. Quantum simulation is considered one of the most promising near-term applications of quantum computing, with the potential to revolutionize fields like materials science, quantum chemistry, and fundamental physics.
 
 ## The Challenge: Why Classical Computers Fail
 
-The difficulty in simulating quantum systems classically lies in the principle of **superposition**. A quantum bit, or **qubit**, can exist in a superposition of its two basis states, 0 and 1. To describe the state of a single qubit, one needs two complex numbers. For two qubits, four complex numbers are needed. For a system of $N$ qubits, the state is described by a vector in a Hilbert space of dimension $2^N$, requiring $2^N$ complex numbers.
+The difficulty in simulating quantum systems classically lies in the principle of **[[Notes/2025/10/06/Foundational Principles of Quantum Mechanics\|superposition]]**. A quantum bit, or **qubit**, can exist in a superposition of its two basis states, 0 and 1. To describe the state of a single qubit, one needs two complex numbers. For two qubits, four complex numbers are needed. For a system of $N$ qubits, the state is described by a vector in a Hilbert space of dimension $2^N$, requiring $2^N$ complex numbers.
 
 $$
 |\psi\rangle = \sum_{i=0}^{2^N-1} c_i |i\rangle
@@ -42,9 +42,9 @@ There are two primary approaches to quantum simulation, distinguished by their f
 An **analog quantum simulator** is a special-purpose device where the Hamiltonian is directly engineered to have the same mathematical form as the target system's Hamiltonian.
 
 -   **Analogy**: It is akin to using a physical scale model of an airplane wing in a wind tunnel to study aerodynamics. The model directly embodies the physics of interest.
--   **Characteristics**: These simulators are less flexible and are designed to solve a specific class of problems. However, they are often more robust to noise and can be built with current, pre-fault-tolerant quantum hardware (so-called Noisy Intermediate-Scale Quantum, or NISQ, devices).
+-   **Characteristics**: These simulators are less flexible and are designed to solve a specific class of problems. However, they are often more robust to noise and can be built with current, pre-fault-tolerant quantum hardware (so-called [[Notes/2025/10/06/Noisy Intermediate-Scale Quantum\|Noisy Intermediate-Scale Quantum]], or NISQ, devices).
 -   **Examples**:
-    -   **Ultracold atoms in optical lattices**: Atoms trapped by lasers can be made to behave like electrons in a crystal, directly simulating condensed matter models like the **Hubbard model**, which is central to understanding high-temperature superconductivity.
+    -   **Ultracold atoms in optical lattices**: Atoms trapped by lasers can be made to behave like electrons in a crystal, directly simulating condensed matter models like the **[[Notes/2025/10/13/Hubbard Model\|Hubbard Model]]**, which is central to understanding high-temperature superconductivity.
     -   **Trapped ions**: Ions held by electromagnetic fields can be used to simulate quantum magnetism and spin models.
 
 ### 2. Digital Quantum Simulators

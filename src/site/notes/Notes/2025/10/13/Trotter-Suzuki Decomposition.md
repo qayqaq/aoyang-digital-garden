@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025/10/13/trotter-suzuki-decomposition/"}
+{"dg-publish":true,"permalink":"/notes/2025/10/13/trotter-suzuki-decomposition/","tags":["#mathematical-physics","#quantum-mechanics","#numerical-methods","#quantum-computing"]}
 ---
 
 - **Core Idea**: Provides a way to approximate the exponential of a sum of non-commuting operators ($e^{A+B}$) by breaking it into a product of individual exponentials (e.g., $(e^{A/N}e^{B/N})^N$).
@@ -21,7 +21,7 @@ The **Trotter-Suzuki Decomposition**, also known as the Trotter product formula,
 
 In mathematics and physics, the exponential of an operator $A$ is defined by its Taylor series expansion, $e^A = \sum_{k=0}^{\infty} \frac{A^k}{k!}$. A familiar property of scalar exponentials is $e^{a+b} = e^a e^b$. However, this property does not generally hold for operators.
 
-The relationship between $e^{A+B}$ and $e^A e^B$ is described by the Baker-Campbell-Hausdorff (BCH) formula. The key insight is that the simple identity holds if and only if the operators commute.
+The relationship between $e^{A+B}$ and $e^A e^B$ is described by the [[Notes/2025/10/13/Baker-Campbell-Hausdorff Formula\|Baker-Campbell-Hausdorff Formula]] (BCH). The key insight is that the simple identity holds if and only if the operators commute.
 
 - **Commuting Operators**: Two operators $A$ and $B$ commute if their order of application does not matter, i.e., $AB = BA$. The **commutator** is defined as $[A, B] = AB - BA$. If $[A, B] = 0$, then $e^{A+B} = e^A e^B$.
 - **Non-Commuting Operators**: If $[A, B] \neq 0$, the simple identity fails. This is the common case in quantum mechanics. For example, the Hamiltonian operator $\hat{H}$ is often a sum of kinetic energy $\hat{K}$ and potential energy $\hat{V}$, which do not commute: $[\hat{K}, \hat{V}] \neq 0$.

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025/10/13/baker-campbell-hausdorff-formula/"}
+{"dg-publish":true,"permalink":"/notes/2025/10/13/baker-campbell-hausdorff-formula/","tags":["#lie-algebra","#quantum-mechanics","#mathematical-physics","#group-theory"]}
 ---
 
 - **Core Idea**: Provides an explicit formula for $Z$ in the equation $e^X e^Y = e^Z$, where $X$ and $Y$ are non-commuting operators.
@@ -78,7 +78,7 @@ The BCH formula is indispensable in quantum theory.
 
 ### 4.2 Lie Group Theory
 
-The BCH formula provides the explicit connection between a Lie algebra $\mathfrak{g}$ (the vector space of operators $X, Y, \dots$ with the commutator bracket) and its corresponding Lie group $G$ (whose elements can be written as $e^X$). It essentially defines the group multiplication law in a local coordinate system around the identity element, using only the structure of the algebra.
+The BCH formula provides the explicit connection between a Lie algebra $\mathfrak{g}$ (the vector space of operators $X, Y, \dots$ with the commutator bracket) and its corresponding [[Notes/2025/10/13/Lie Group\|Lie Group]] $G$ (whose elements can be written as $e^X$). It essentially defines the group multiplication law in a local coordinate system around the identity element, using only the structure of the algebra.
 
 ## 5. Conclusion
 

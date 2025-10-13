@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025/10/13/quantum-harmonic-oscillator/"}
+{"dg-publish":true,"permalink":"/notes/2025/10/13/quantum-harmonic-oscillator/","tags":["#quantum-mechanics","#physics","#harmonic-oscillator"]}
 ---
 
 #quantum-mechanics #physics #harmonic-oscillator

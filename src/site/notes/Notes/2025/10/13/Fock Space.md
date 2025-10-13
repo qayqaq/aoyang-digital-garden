@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025/10/13/fock-space/"}
+{"dg-publish":true,"permalink":"/notes/2025/10/13/fock-space/","tags":["#quantum-mechanics","#quantum-field-theory","#many-body-physics"]}
 ---
 
 #quantum-mechanics #quantum-field-theory #many-body-physics
@@ -15,7 +15,7 @@
 
 ### Introduction
 
-In elementary quantum mechanics, systems are typically analyzed with a fixed number of particles, such as the single electron in a hydrogen atom. However, many phenomena in modern physics, particularly in high-energy particle physics and condensed matter theory, involve processes where particles are created and destroyed. To describe such systems, a more sophisticated mathematical structure is required. The **Fock space** is an algebraic construction, specifically a Hilbert space, that provides the state space for a quantum mechanical system with a variable or undefined number of particles. It is the bedrock upon which [[Notes/2025/10/06/Foundational Principles of Quantum Mechanics\|second quantization]] and Quantum Field Theory (QFT) are built.
+In elementary quantum mechanics, systems are typically analyzed with a fixed number of particles, such as the single electron in a hydrogen atom. However, many phenomena in modern physics, particularly in high-energy particle physics and condensed matter theory, involve processes where particles are created and destroyed. To describe such systems, a more sophisticated mathematical structure is required. The **Fock space** is an algebraic construction, specifically a Hilbert space, that provides the state space for a quantum mechanical system with a variable or undefined number of particles. It is the bedrock upon which [[Notes/2025/10/13/Second Quantization\|second quantization]] and Quantum Field Theory (QFT) are built.
 
 ---
 
@@ -23,13 +23,13 @@ In elementary quantum mechanics, systems are typically analyzed with a fixed num
 
 The core idea behind Fock space is to combine the state spaces for all possible particle numbers into a single, larger space.
 
-1.  **Single-Particle Hilbert Space ($\mathcal{H}_1$)**: We begin with the standard Hilbert space for a single particle, $\mathcal{H}_1$. A vector (or "ket") $|\psi\rangle \in \mathcal{H}_1$ describes the complete state of one particle.
+1. **Single-Particle Hilbert Space ($\mathcal{H}_1$)**: We begin with the standard Hilbert space for a single particle, $\mathcal{H}_1$. A vector (or "ket") $|\psi\rangle \in \mathcal{H}_1$ describes the complete state of one particle.
 
-2.  **N-Particle Hilbert Space ($\mathcal{H}_N$)**: The state of a system with $N$ distinguishable particles is described by the tensor product of $N$ single-particle spaces: $\mathcal{H}_N = \mathcal{H}_1^{\otimes N} = \mathcal{H}_1 \otimes \mathcal{H}_1 \otimes \cdots \otimes \mathcal{H}_1$.
+2. **N-Particle Hilbert Space ($\mathcal{H}_N$)**: The state of a system with $N$ distinguishable particles is described by the tensor product of $N$ single-particle spaces: $\mathcal{H}_N = \mathcal{H}_1^{\otimes N} = \mathcal{H}_1 \otimes \mathcal{H}_1 \otimes \cdots \otimes \mathcal{H}_1$.
 
-3.  **The Vacuum State ($\mathcal{H}_0$)**: We must also account for the possibility of having zero particles. This state, known as the **vacuum state**, is denoted by $|0\rangle$ or $|\text{vac}\rangle$. It is a normalized vector that spans a one-dimensional complex Hilbert space, $\mathcal{H}_0 \cong \mathbb{C}$.
+3. **The Vacuum State ($\mathcal{H}_0$)**: We must also account for the possibility of having zero particles. This state, known as the **vacuum state**, is denoted by $|0\rangle$ or $|\text{vac}\rangle$. It is a normalized vector that spans a one-dimensional complex Hilbert space, $\mathcal{H}_0 \cong \mathbb{C}$.
 
-4.  **The Full Fock Space ($\mathcal{F}$)**: The Fock space is constructed as the **direct sum** of the Hilbert spaces for each particle number $N$, from zero to infinity.
+4. **The Full Fock Space ($\mathcal{F}$)**: The Fock space is constructed as the **direct sum** of the Hilbert spaces for each particle number $N$, from zero to infinity.
 
     $$
     \mathcal{F} = \mathcal{H}_0 \oplus \mathcal{H}_1 \oplus \mathcal{H}_2 \oplus \cdots = \bigoplus_{N=0}^{\infty} \mathcal{H}_N
@@ -45,7 +45,7 @@ For systems of **identical particles**, the simple tensor product construction i
 
 ### 1. Bosonic Fock Space ($\mathcal{F}_S$)
 
-For **bosons** (particles with integer spin, e.g., photons, gluons), the multi-particle state vector must be **symmetric** under the exchange of any two particles. We therefore replace the simple tensor product space $\mathcal{H}_N$ with its symmetric subspace, $\mathcal{H}_N^{(S)}$.
+For **[[Notes/2025/10/13/Bosons\|bosons]]** (particles with integer spin, e.g., photons, gluons), the multi-particle state vector must be **symmetric** under the exchange of any two particles. We therefore replace the simple tensor product space $\mathcal{H}_N$ with its symmetric subspace, $\mathcal{H}_N^{(S)}$.
 
 The bosonic Fock space is then the direct sum of these symmetric N-particle spaces:
 
@@ -55,7 +55,7 @@ $$
 
 ### 2. Fermionic Fock Space ($\mathcal{F}_A$)
 
-For **fermions** (particles with half-integer spin, e.g., electrons, quarks), the multi-particle state vector must be **antisymmetric** under the exchange of any two particles. This mathematical requirement is the origin of the **Pauli Exclusion Principle**. We replace $\mathcal{H}_N$ with its antisymmetric subspace, $\mathcal{H}_N^{(A)}$.
+For **[[Notes/2025/10/13/Fermions\|fermions]]** (particles with half-integer spin, e.g., electrons, quarks), the multi-particle state vector must be **antisymmetric** under the exchange of any two particles. This mathematical requirement is the origin of the **Pauli Exclusion Principle**. We replace $\mathcal{H}_N$ with its antisymmetric subspace, $\mathcal{H}_N^{(A)}$.
 
 The fermionic Fock space is the direct sum of these antisymmetric N-particle spaces:
 
@@ -79,8 +79,8 @@ $$
 
 where $n_k$ is the occupation number of the $k$-th state. The total number of particles is $N = \sum_k n_k$.
 
-*   For **bosons**, any occupation number is allowed: $n_k \in \{0, 1, 2, \dots\}$.
-*   For **fermions**, the Pauli exclusion principle restricts the occupation numbers to $n_k \in \{0, 1\}$.
+* For **bosons**, any occupation number is allowed: $n_k \in \{0, 1, 2, \dots\}$.
+* For **fermions**, the Pauli exclusion principle restricts the occupation numbers to $n_k \in \{0, 1\}$.
 
 ---
 
@@ -88,8 +88,8 @@ where $n_k$ is the occupation number of the $k$-th state. The total number of pa
 
 The true power of the Fock space formalism is realized through the introduction of operators that change the particle number.
 
-*   **Annihilation Operator ($a_k$)**: Removes (annihilates) one particle from the single-particle state $|\phi_k\rangle$.
-*   **Creation Operator ($a_k^\dagger$)**: Adds (creates) one particle in the single-particle state $|\phi_k\rangle$.
+* **Annihilation Operator ($a_k$)**: Removes (annihilates) one particle from the single-particle state $|\phi_k\rangle$.
+* **Creation Operator ($a_k^\dagger$)**: Adds (creates) one particle in the single-particle state $|\phi_k\rangle$.
 
 These operators are defined by their action on the occupation number basis states. For bosons:
 $a_k |n_1, \dots, n_k, \dots \rangle = \sqrt{n_k} |n_1, \dots, n_k-1, \dots \rangle$
@@ -101,11 +101,11 @@ The entire Fock space can be generated by repeatedly applying creation operators
 
 The fundamental nature of the particles is encoded in the algebraic relations these operators satisfy.
 
-*   **For Bosons**, they obey **canonical commutation relations**:
+* **For Bosons**, they obey **canonical commutation relations**:
     $$
     [a_i, a_j] = 0, \quad [a_i^\dagger, a_j^\dagger] = 0, \quad [a_i, a_j^\dagger] = \delta_{ij}
     $$
-*   **For Fermions**, they obey **canonical anticommutation relations**:
+* **For Fermions**, they obey **canonical anticommutation relations**:
     $$
     \{c_i, c_j\} = 0, \quad \{c_i^\dagger, c_j^\dagger\} = 0, \quad \{c_i, c_j^\dagger\} = \delta_{ij}
     $$

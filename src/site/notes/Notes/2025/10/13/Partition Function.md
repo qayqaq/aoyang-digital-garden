@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025/10/13/partition-function/"}
+{"dg-publish":true,"permalink":"/notes/2025/10/13/partition-function/","tags":["#statistical_mechanics","#thermodynamics","#quantum_mechanics","#probability_theory"]}
 ---
 
 #statistical_mechanics #thermodynamics #quantum_mechanics #probability_theory
@@ -59,8 +59,8 @@ The trace of an operator is the sum of its diagonal elements in any complete bas
 > **Connection to the Classical Form**
 > If we choose to evaluate the trace in the basis of energy eigenstates $\{|n\rangle\}$, where $\hat{H}|n\rangle = E_n|n\rangle$, the operator $e^{-\beta \hat{H}}$ is diagonal, and its matrix elements are $\langle m | e^{-\beta \hat{H}} | n \rangle = e^{-\beta E_n} \delta_{mn}$. The trace then becomes:
 > $$
-> Z = \sum_n \langle n | e^{-\beta \hat{H}} | n \rangle = \sum_n e^{-\beta E_n}
-> $$
+ Z = \sum_n \langle n | e^{-\beta \hat{H}} | n \rangle = \sum_n e^{-\beta E_n}
+ $$
 > This recovers the familiar sum-over-states form. The quantum definition is thus a generalization that is central to advanced methods like [[Notes/2025/10/13/Determinant Quantum Monte Carlo\|Determinant Quantum Monte Carlo]].
 
 ## The Bridge to Thermodynamics
@@ -77,22 +77,22 @@ The Helmholtz free energy represents the "useful" work obtainable from a closed 
 
 ### Deriving Thermodynamic Quantities
 
--   **Internal Energy ($U$ or $\langle E \rangle$)**: The average energy of the system.
+- **Internal Energy ($U$ or $\langle E \rangle$)**: The average energy of the system.
     $$
     U = \langle E \rangle = -\frac{\partial (\ln Z)}{\partial \beta}
     $$
 
--   **Entropy ($S$)**: A measure of the system's disorder or the number of microstates corresponding to a given macrostate.
+- **Entropy ($S$)**: A measure of the system's disorder or the number of microstates corresponding to a given macrostate.
     $$
     S = -\left(\frac{\partial F}{\partial T}\right)_V = k_B \ln Z + \frac{U}{T}
     $$
 
--   **Pressure ($P$)**: The force per unit area exerted by the system.
+- **Pressure ($P$)**: The force per unit area exerted by the system.
     $$
     P = -\left(\frac{\partial F}{\partial V}\right)_T = k_B T \left(\frac{\partial \ln Z}{\partial V}\right)_T
     $$
 
--   **Heat Capacity at Constant Volume ($C_V$)**: The amount of heat required to raise the system's temperature by one unit at constant volume. It is related to the fluctuations in the system's energy.
+- **Heat Capacity at Constant Volume ($C_V$)**: The amount of heat required to raise the system's temperature by one unit at constant volume. It is related to the fluctuations in the system's energy.
     $$
     C_V = \left(\frac{\partial U}{\partial T}\right)_V = k_B \beta^2 \frac{\partial^2 (\ln Z)}{\partial \beta^2} = k_B \beta^2 (\langle E^2 \rangle - \langle E \rangle^2)
     $$
@@ -101,8 +101,8 @@ The Helmholtz free energy represents the "useful" work obtainable from a closed 
 
 The partition function $Z$ provides a rough measure of the number of microstates that are thermally accessible to the system.
 
--   **At absolute zero ($T \to 0$, $\beta \to \infty$)**: The Boltzmann factor $e^{-\beta E}$ vanishes for all states except the ground state (with energy $E_0$). Thus, $Z \approx g_0 e^{-\beta E_0}$, where $g_0$ is the degeneracy of the ground state. The system is "frozen" in its lowest energy configuration.
--   **At very high temperatures ($T \to \infty$, $\beta \to 0$)**: The Boltzmann factor approaches 1 for all states. Thus, $Z$ approaches the total number of states in the system. All states become equally probable.
+- **At absolute zero ($T \to 0$, $\beta \to \infty$)**: The Boltzmann factor $e^{-\beta E}$ vanishes for all states except the ground state (with energy $E_0$). Thus, $Z \approx g_0 e^{-\beta E_0}$, where $g_0$ is the degeneracy of the ground state. The system is "frozen" in its lowest energy configuration.
+- **At very high temperatures ($T \to \infty$, $\beta \to 0$)**: The Boltzmann factor approaches 1 for all states. Thus, $Z$ approaches the total number of states in the system. All states become equally probable.
 
 The name "partition function" aptly describes its role: it details how the total probability is **partitioned** among the different available microstates of the system.
 
@@ -113,36 +113,36 @@ The description of the partition function as a "generating function" is not mere
 ### The Core Idea of a "Generating Function"
 
 In mathematics, a **generating function** is a formal power series whose coefficients encode a sequence of numbers. It's a way to package an entire, often infinite, sequence of information into a single, compact function. The key property is that one can recover the original sequence by performing operations on this function, most commonly by taking its derivatives.
--   The [[Notes/2025/09/08/Moment-Generating Function\|Moment-Generating Function]] $M_X(t)$ packages all the **moments** ($E[X], E[X^2], \dots$) of a random variable $X$.
--   The [[Notes/2025/09/08/Cumulant-Generating Function\|Cumulant-Generating Function]] $K_X(t)$ packages all the **cumulants** ($\kappa_1, \kappa_2, \dots$).
--   In statistical mechanics, the partition function $Z$ (or more accurately, its logarithm) packages all the key **thermodynamic properties**.
+- The [[Notes/2025/09/08/Moment-Generating Function\|Moment-Generating Function]] $M_X(t)$ packages all the **moments** ($E[X], E[X^2], \dots$) of a random variable $X$.
+- The [[Notes/2025/09/08/Cumulant-Generating Function\|Cumulant-Generating Function]] $K_X(t)$ packages all the **cumulants** ($\kappa_1, \kappa_2, \dots$).
+- In statistical mechanics, the partition function $Z$ (or more accurately, its logarithm) packages all the key **thermodynamic properties**.
 
 ### Direct Analogy: Partition Function vs. Moment-Generating Function
 
 The mathematical forms of the partition function and the Moment-Generating Function (MGF) are strikingly similar.
 
-1.  **Moment-Generating Function (MGF)** for a discrete random variable $X$:
+1. **Moment-Generating Function (MGF)** for a discrete random variable $X$:
     $$
     M_X(t) = E[e^{tX}] = \sum_x p(x) e^{tx}
     $$
     This is a sum over all possible values $x$, weighted by their probabilities $p(x)$.
 
-2.  **Partition Function ($Z$)** for a system with discrete energy states $E_s$:
+2. **Partition Function ($Z$)** for a system with discrete energy states $E_s$:
     $$
     Z = \sum_s e^{-\beta E_s}
     $$
     This is a sum over all possible microstates $s$. The term $e^{-\beta E_s}$ is the **Boltzmann factor**, which is proportional to the probability of that state ($P_s = e^{-\beta E_s} / Z$).
 
 The analogy is clear:
--   The random variable $X$ corresponds to the **Energy $E_s$**.
--   The parameter $t$ in the MGF corresponds to the **negative inverse temperature $-\beta$**.
--   The MGF itself, $M_X(t)$, is the direct mathematical analog of the **Partition Function $Z$**.
+- The random variable $X$ corresponds to the **Energy $E_s$**.
+- The parameter $t$ in the MGF corresponds to the **negative inverse temperature $-\beta$**.
+- The MGF itself, $M_X(t)$, is the direct mathematical analog of the **Partition Function $Z$**.
 
 ### Deeper Analogy: Free Energy vs. Cumulant-Generating Function
 
 The connection becomes even more profound when we consider the logarithm of these functions.
 
-1.  **Cumulant-Generating Function (CGF)**:
+1. **Cumulant-Generating Function (CGF)**:
     $$
     K_X(t) = \ln(M_X(t))
     $$
@@ -150,14 +150,14 @@ The connection becomes even more profound when we consider the logarithm of thes
     -   $\kappa_1 = K'_X(0) = E[X]$ (the mean)
     -   $\kappa_2 = K''_X(0) = \text{Var}(X) = E[X^2] - (E[X])^2$ (the variance)
 
-2.  **Helmholtz Free Energy ($F$)**:
+2. **Helmholtz Free Energy ($F$)**:
     The logarithm of the partition function is directly related to the free energy:
     $$
     \ln Z = -\beta F
     $$
     The derivatives of $\ln Z$ with respect to $-\beta$ give the **thermodynamic cumulants**:
-    -   **First derivative**: $-\frac{\partial (\ln Z)}{\partial \beta} = \langle E \rangle$ (the average energy, which is the mean).
-    -   **Second derivative**: $\frac{\partial^2 (\ln Z)}{\partial \beta^2} = \langle E^2 \rangle - \langle E \rangle^2$ (the variance of the energy, related to heat capacity).
+    - **First derivative**: $-\frac{\partial (\ln Z)}{\partial \beta} = \langle E \rangle$ (the average energy, which is the mean).
+    - **Second derivative**: $\frac{\partial^2 (\ln Z)}{\partial \beta^2} = \langle E^2 \rangle - \langle E \rangle^2$ (the variance of the energy, related to heat capacity).
 
 This reveals a perfect analogy: the **Helmholtz Free Energy is the physical equivalent of the Cumulant-Generating Function**. Just as the CGF generates the cumulants of a random variable, the Free Energy (via $\ln Z$) generates the "cumulants" of the system's energy distribution, which we identify as fundamental thermodynamic properties.
 
@@ -178,14 +178,3 @@ This reveals a perfect analogy: the **Helmholtz Free Energy is the physical equi
 
 The partition function is the central pillar upon which the edifice of statistical mechanics is built. It is a remarkably elegant concept that provides a complete thermodynamic description of a system in thermal equilibrium. By encoding the microscopic energy spectrum into a single mathematical function, it allows physicists and chemists to calculate macroscopic properties and understand the collective behavior of matter from first principles. The calculation of the partition function, whether analytically or numerically, remains a primary objective in the theoretical study of physical systems.
 
-#### Sources:
-
-- [[Notes/2025/10/13/Partition Function\|Partition Function]]
-- [[Notes/2025/10/13/Determinant Quantum Monte Carlo\|Determinant Quantum Monte Carlo]]
-- [[Notes/2025/09/08/Moment-Generating Function\|Moment-Generating Function]]
-- [[Notes/2025/09/08/Cumulant-Generating Function\|Cumulant-Generating Function]]
-- [[Assets/Copilot/copilot-custom-prompts/Refine\|Refine]]
-- [[Notes/Arxiv/Place Cells as Proximity-Preserving Embeddings From Multi-Scale Random Walk to Straight-Forward Path Planning (2505.14806v3)\|Place Cells as Proximity-Preserving Embeddings From Multi-Scale Random Walk to Straight-Forward Path Planning (2505.14806v3)]]
-- [[Notes/Arxiv/A Phase Transition in Diffusion Models Reveals the Hierarchical Nature of Data (2402.16991v3)\|A Phase Transition in Diffusion Models Reveals the Hierarchical Nature of Data (2402.16991v3)]]
-- [[Templates/General Notes\|General Notes]]
-- [[Assets/Copilot/copilot-custom-prompts/Teaching\|Teaching]]

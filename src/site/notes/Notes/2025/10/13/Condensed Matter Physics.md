@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025/10/13/condensed-matter-physics/"}
+{"dg-publish":true,"permalink":"/notes/2025/10/13/condensed-matter-physics/","tags":["#physics/condensed-matter"]}
 ---
 
 #physics/condensed-matter

@@ -1,14 +1,14 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025/10/13/hubbard-model/"}
+{"dg-publish":true,"permalink":"/notes/2025/10/13/hubbard-model/","tags":["#condensed_matter_physics","#quantum_mechanics","#many_body_problem","#strongly_correlated_systems"]}
 ---
 
 #condensed_matter_physics #quantum_mechanics #many_body_problem #strongly_correlated_systems
 [[Hubbard model.canvas\|Hubbard model.canvas]]
 
 - The **Hubbard model** is a foundational, simplified model in condensed matter physics that describes interacting particles (typically electrons) on a lattice.
--   It captures the fundamental competition between two effects: the **kinetic energy** ($t$), which allows particles to hop between lattice sites, and the **on-site potential energy** ($U$), which represents the Coulomb repulsion when two particles occupy the same site.
--   The model successfully explains the transition from a **metal** (where electrons are delocalized and conduct electricity) to a **Mott insulator** (where strong repulsion localizes electrons, preventing conduction), a phenomenon that cannot be described by classical band theory.
--   Despite its simplicity, the Hubbard model is believed to contain the essential physics for complex phenomena like **antiferromagnetism** and **high-temperature superconductivity**, but it is notoriously difficult to solve exactly in dimensions greater than one.
+- It captures the fundamental competition between two effects: the **kinetic energy** ($t$), which allows particles to hop between lattice sites, and the **on-site potential energy** ($U$), which represents the Coulomb repulsion when two particles occupy the same site.
+- The model successfully explains the transition from a **metal** (where electrons are delocalized and conduct electricity) to a **Mott insulator** (where strong repulsion localizes electrons, preventing conduction), a phenomenon that cannot be described by classical band theory.
+- Despite its simplicity, the Hubbard model is believed to contain the essential physics for complex phenomena like **antiferromagnetism** and **high-temperature superconductivity**, but it is notoriously difficult to solve exactly in dimensions greater than one.
 
 # The Hubbard Model
 
@@ -40,9 +40,9 @@ Let's break down each component:
     $$
     \hat{V} = U \sum_i \hat{n}_{i\uparrow} \hat{n}_{i\downarrow}
     $$
-    *   $\hat{n}_{i\sigma} = c_{i\sigma}^\dagger c_{i\sigma}$ is the **number operator**, which counts the number of electrons with spin $\sigma$ at site $i$.
-    *   The product $\hat{n}_{i\uparrow} \hat{n}_{i\downarrow}$ is only non-zero if site $i$ is occupied by both a spin-up and a spin-down electron (i.e., it is doubly occupied).
-    *   The parameter $U$ is the **on-site Coulomb repulsion**. It represents the energy cost of placing two electrons on the same lattice site. A larger $U$ means stronger repulsion. This term promotes electron localization.
+    * $\hat{n}_{i\sigma} = c_{i\sigma}^\dagger c_{i\sigma}$ is the **number operator**, which counts the number of electrons with spin $\sigma$ at site $i$.
+    * The product $\hat{n}_{i\uparrow} \hat{n}_{i\downarrow}$ is only non-zero if site $i$ is occupied by both a spin-up and a spin-down electron (i.e., it is doubly occupied).
+    * The parameter $U$ is the **on-site Coulomb repulsion**. It represents the energy cost of placing two electrons on the same lattice site. A larger $U$ means stronger repulsion. This term promotes electron localization.
 
 The physics of the Hubbard model is governed by the ratio of these two parameters, $U/t$.
 
@@ -53,8 +53,8 @@ The competition between hopping ($t$) and repulsion ($U$) leads to distinct phys
 ### The Metal-Insulator Transition (Mott Transition)
 
 Consider a system with an average of one electron per site (known as **half-filling**).
-*   **Weak Correlation ($U/t \ll 1$)**: When the repulsion is weak, the kinetic term dominates. Electrons can easily hop from site to site, delocalizing throughout the lattice to form wide energy bands. The system behaves like a **metal**, as predicted by conventional band theory.
-*   **Strong Correlation ($U/t \gg 1$)**: When the repulsion is strong, the energy cost $U$ to doubly occupy a site is prohibitive. Each electron becomes effectively locked to its own lattice site to avoid this penalty. Electron motion is suppressed, and the system becomes an electrical insulator. This state is known as a **Mott insulator**.
+* **Weak Correlation ($U/t \ll 1$)**: When the repulsion is weak, the kinetic term dominates. Electrons can easily hop from site to site, delocalizing throughout the lattice to form wide energy bands. The system behaves like a **metal**, as predicted by conventional band theory.
+* **Strong Correlation ($U/t \gg 1$)**: When the repulsion is strong, the energy cost $U$ to doubly occupy a site is prohibitive. Each electron becomes effectively locked to its own lattice site to avoid this penalty. Electron motion is suppressed, and the system becomes an electrical insulator. This state is known as a **Mott insulator**.
 
 > The existence of a Mott insulator is a profound result of electron correlation. Standard band theory, which ignores interactions, would incorrectly predict that a system with a half-filled band should always be a metal. The Hubbard model provides the simplest explanation for why materials like NiO are insulators.
 
@@ -73,12 +73,12 @@ The parent compounds of cuprates are Mott insulators. When they are doped (by ad
 ## Solving the Hubbard Model
 
 Despite its simple form, solving the Hubbard model is extremely challenging due to its quantum many-body nature.
--   **Exact Solutions**: An exact solution using the Bethe Ansatz exists only for the one-dimensional case. No general exact solution is known for two or three dimensions.
--   **Numerical Methods**: For higher dimensions, physicists rely on sophisticated numerical techniques:
-    -   **Exact Diagonalization**: Can solve the model exactly but is limited to very small systems (around 20-30 sites) due to the exponential growth of the Hilbert space.
-    -   **Quantum Monte Carlo (QMC)**: A powerful method, particularly [[Notes/2025/10/13/Determinant Quantum Monte Carlo\|Determinant Quantum Monte Carlo]], that can simulate larger systems. However, it often suffers from the "fermion sign problem" away from half-filling, which makes simulations at low temperatures numerically unstable.
-    -   **Density Matrix Renormalization Group (DMRG)**: Extremely accurate for 1D systems and quasi-1D systems (ladders and strips).
-    -   **Dynamical Mean-Field Theory (DMFT)**: An approximation that becomes exact in the limit of infinite dimensions and provides valuable insights for 3D systems.
+- **Exact Solutions**: An exact solution using the [[Notes/2025/10/13/Bethe Ansatz\|Bethe Ansatz]] exists only for the one-dimensional case. No general exact solution is known for two or three dimensions.
+- **Numerical Methods**: For higher dimensions, physicists rely on sophisticated numerical techniques:
+    - **Exact Diagonalization**: Can solve the model exactly but is limited to very small systems (around 20-30 sites) due to the exponential growth of the Hilbert space.
+    - **Quantum Monte Carlo (QMC)**: A powerful method, particularly [[Notes/2025/10/13/Determinant Quantum Monte Carlo\|Determinant Quantum Monte Carlo]], that can simulate larger systems. However, it often suffers from the "fermion sign problem" away from half-filling, which makes simulations at low temperatures numerically unstable.
+    - **Density Matrix Renormalization Group (DMRG)**: Extremely accurate for 1D systems and quasi-1D systems (ladders and strips).
+    - **Dynamical Mean-Field Theory (DMFT)**: An approximation that becomes exact in the limit of infinite dimensions and provides valuable insights for 3D systems.
 
 ## Conclusion
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025/10/13/second-quantization/"}
+{"dg-publish":true,"permalink":"/notes/2025/10/13/second-quantization/","tags":["#physics/quantum-mechanics","#physics/quantum-field-theory","#many-body-physics"]}
 ---
 
 #physics/quantum-mechanics #physics/quantum-field-theory #many-body-physics

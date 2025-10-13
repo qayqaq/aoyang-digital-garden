@@ -1,6 +1,11 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025/10/13/creation-and-annihilation-operators/"}
+{"dg-publish":true,"permalink":"/notes/2025/10/13/creation-and-annihilation-operators/","tags":["#quantum_mechanics","#quantum_field_theory","#operators","#many_body_physics"]}
 ---
+
+- **Creation and annihilation operators** are mathematical tools that add ($a^\dagger$) or remove ($a$) a particle or a quantum of energy from a system's state.
+- They are fundamental to the formalism of **second quantization**, which provides a framework for describing quantum systems with a variable number of particles, such as in quantum field theory.
+- The algebraic rules these operators obey—**commutation relations** for bosons and **anti-commutation relations** for fermions—elegantly encode the fundamental statistical differences between these two classes of particles, including the Pauli exclusion principle for fermions.
+- In the context of the quantum harmonic oscillator, they are known as **ladder operators** because they move the system up or down its ladder of quantized energy levels, greatly simplifying the problem's solution.
 
 #quantum_mechanics #quantum_field_theory #operators #many_body_physics
 [[Creation and Annihilation Operators.canvas\|Creation and Annihilation Operators.canvas]]
@@ -44,14 +49,14 @@ $$
 This algebraic form is much simpler to analyze. We define the **number operator** $\hat{N} = \hat{a}^\dagger\hat{a}$. If $|n\rangle$ is an eigenstate of $\hat{N}$ with eigenvalue $n$, then it is also an eigenstate of the Hamiltonian with energy $E_n = \hbar\omega(n + 1/2)$.
 
 The names "creation" and "annihilation" come from how they act on these energy eigenstates:
--   **Annihilation**: $\hat{a}|n\rangle = \sqrt{n}|n-1\rangle$. The operator $\hat{a}$ annihilates one quantum of energy, lowering the state from $|n\rangle$ to $|n-1\rangle$.
--   **Creation**: $\hat{a}^\dagger|n\rangle = \sqrt{n+1}|n+1\rangle$. The operator $\hat{a}^\dagger$ creates one quantum of energy, raising the state from $|n\rangle$ to $|n+1\rangle$.
+- **Annihilation**: $\hat{a}|n\rangle = \sqrt{n}|n-1\rangle$. The operator $\hat{a}$ annihilates one quantum of energy, lowering the state from $|n\rangle$ to $|n-1\rangle$.
+- **Creation**: $\hat{a}^\dagger|n\rangle = \sqrt{n+1}|n+1\rangle$. The operator $\hat{a}^\dagger$ creates one quantum of energy, raising the state from $|n\rangle$ to $|n+1\rangle$.
 
 Because they move the system up and down the "ladder" of energy states, they are often called **ladder operators** in this context. The ladder must have a bottom rung, a ground state $|0\rangle$ that cannot be lowered further. This implies $\hat{a}|0\rangle = 0$, which correctly yields the ground state energy $E_0 = \frac{1}{2}\hbar\omega$.
 
 ## Second Quantization and Many-Body Systems
 
-The concept can be generalized from energy quanta in an oscillator to actual particles in a many-body system. This is the framework of **second quantization**. Here, the state of the system is described in **Fock space**, a Hilbert space that includes states with different numbers of particles. A state is defined by the number of particles occupying each possible single-particle quantum state.
+The concept can be generalized from energy quanta in an oscillator to actual particles in a many-body system. This is the framework of **second quantization**. Here, the state of the system is described in **[[Notes/2025/10/13/Fock Space\|Fock Space]]**, a Hilbert space that includes states with different numbers of particles. A state is defined by the number of particles occupying each possible single-particle quantum state.
 
 We define an annihilation operator $\hat{a}_k$ and a creation operator $\hat{a}_k^\dagger$ for each single-particle state $|k\rangle$.
 -   $\hat{a}_k^\dagger$ creates a particle in state $|k\rangle$.
@@ -95,9 +100,9 @@ This means applying the same creation operator twice results in a null state. It
 
 The formalism of creation and annihilation operators is ubiquitous in modern physics.
 
--   **Quantum Field Theory (QFT)**: QFT treats fundamental particles as excitations (quanta) of underlying fields. Creation and annihilation operators are the language used to describe the creation of particles from the vacuum and their subsequent interactions and annihilations.
--   **Condensed Matter Physics**: Hamiltonians for interacting electrons in solids are written compactly using these operators. For example, in the [[Notes/2025/10/13/Hubbard Model\|Hubbard model]], the term $c_{i\sigma}^\dagger c_{j\sigma}$ transparently describes an electron being annihilated at site $j$ and created at site $i$.
--   **Quantum Optics**: The operators $\hat{a}$ and $\hat{a}^\dagger$ are used to describe the annihilation and creation of photons in a mode of the electromagnetic field, forming the basis for the quantum description of light.
+- **Quantum Field Theory (QFT)**: QFT treats fundamental particles as excitations (quanta) of underlying fields. Creation and annihilation operators are the language used to describe the creation of particles from the vacuum and their subsequent interactions and annihilations.
+- **Condensed Matter Physics**: Hamiltonians for interacting electrons in solids are written compactly using these operators. For example, in the [[Notes/2025/10/13/Hubbard Model\|Hubbard model]], the term $c_{i\sigma}^\dagger c_{j\sigma}$ transparently describes an electron being annihilated at site $j$ and created at site $i$.
+- **Quantum Optics**: The operators $\hat{a}$ and $\hat{a}^\dagger$ are used to describe the annihilation and creation of photons in a mode of the electromagnetic field, forming the basis for the quantum description of light.
 
 ## Conclusion
 

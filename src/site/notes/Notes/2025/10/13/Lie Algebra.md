@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025/10/13/lie-algebra/"}
+{"dg-publish":true,"permalink":"/notes/2025/10/13/lie-algebra/","tags":["#mathematics","#algebra","#LieTheory","#physics"]}
 ---
 
 - A **Lie algebra** is a vector space equipped with a non-associative binary operation called the **Lie bracket**, which is anti-commutative and satisfies the Jacobi identity.
@@ -78,7 +78,7 @@ This Lie algebra, $\mathfrak{gl}(n, F)$, is the Lie algebra of the **general lin
 
 The profound importance of Lie algebras stems from their role as the linear approximation of Lie groups.
 
-- **Lie Group**: A **Lie group** $G$ is a smooth manifold that is also a group, such that the group operations (multiplication and inversion) are smooth maps. Examples include the rotation group $SO(n)$ and the special unitary group $SU(n)$.
+- **Lie Group**: A **[[Notes/2025/10/13/Lie Group\|Lie group]]** $G$ is a smooth manifold that is also a group, such that the group operations (multiplication and inversion) are smooth maps. Examples include the rotation group $SO(n)$ and the special unitary group $SU(n)$.
 
 - **Tangent Space**: The Lie algebra $\mathfrak{g}$ of a Lie group $G$ is defined as the **tangent space to the group at its identity element**, $T_eG$. The elements of the Lie algebra can be thought of as "infinitesimal generators" of transformations within the group.
 

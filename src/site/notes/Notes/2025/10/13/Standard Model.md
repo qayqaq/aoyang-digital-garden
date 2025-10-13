@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025/10/13/standard-model/"}
+{"dg-publish":true,"permalink":"/notes/2025/10/13/standard-model/","tags":["#particle-physics","#quantum-field-theory","#fundamental-forces","#fundamental-particles"]}
 ---
 
 #particle-physics #quantum-field-theory #fundamental-forces #fundamental-particles

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025/10/13/quantum-monte-carlo/"}
+{"dg-publish":true,"permalink":"/notes/2025/10/13/quantum-monte-carlo/","tags":["#computational_physics","#quantum_mechanics","#statistical_mechanics","#monte_carlo","#numerical_methods"]}
 ---
 
 #computational_physics #quantum_mechanics #statistical_mechanics #monte_carlo #numerical_methods
@@ -42,8 +42,8 @@ $$
 -\frac{\partial \Psi(\mathbf{R}, \tau)}{\partial \tau} = \hat{H}\Psi(\mathbf{R}, \tau) = \left(-\frac{\hbar^2}{2m}\sum_i \nabla_i^2 + V(\mathbf{R})\right)\Psi(\mathbf{R}, \tau)
 $$
 This equation describes the evolution of a quantity $\Psi$ subject to two processes:
-1.  **Diffusion**: The kinetic energy term ($-\nabla^2$) corresponds to a classical diffusion process.
-2.  **Reaction/Branching**: The potential energy term ($V(\mathbf{R})$) acts as a local "rate" term that can increase or decrease the quantity $\Psi$.
+1. **Diffusion**: The kinetic energy term ($-\nabla^2$) corresponds to a classical diffusion process.
+2. **Reaction/Branching**: The potential energy term ($V(\mathbf{R})$) acts as a local "rate" term that can increase or decrease the quantity $\Psi$.
 
 This analogy allows us to simulate the quantum system by evolving a population of "walkers," where each walker represents a specific configuration $\mathbf{R}$ of the particles. The walkers undergo random walks (diffusion) and are replicated or eliminated (branching) according to the local potential energy. The long-time distribution of these walkers converges to the ground-state wavefunction, $\Psi_0$.
 
@@ -58,10 +58,10 @@ $$
 E_V = \frac{\langle \Psi_T | \hat{H} | \Psi_T \rangle}{\langle \Psi_T | \Psi_T \rangle} = \frac{\int |\Psi_T(\mathbf{R})|^2 \left( \frac{\hat{H}\Psi_T(\mathbf{R})}{\Psi_T(\mathbf{R})} \right) d\mathbf{R}}{\int |\Psi_T(\mathbf{R})|^2 d\mathbf{R}} \ge E_0
 $$
 The term $E_L(\mathbf{R}) = \frac{\hat{H}\Psi_T(\mathbf{R})}{\Psi_T(\mathbf{R})}$ is known as the **local energy**. The VMC method proceeds as follows:
-1.  **Construct a Trial Wavefunction**: A physically motivated, parameterized trial wavefunction $\Psi_T(\mathbf{R}, \alpha)$ is constructed. A common form is the Slater-Jastrow wavefunction.
-2.  **Monte Carlo Integration**: The Metropolis algorithm is used to generate a set of particle configurations $\{\mathbf{R}_i\}$ that are distributed according to the probability density $|\Psi_T|^2$.
-3.  **Calculate Energy**: The variational energy is calculated as the average of the local energy over these sampled configurations: $E_V \approx \frac{1}{M} \sum_{i=1}^M E_L(\mathbf{R}_i)$.
-4.  **Optimization**: The parameters $\alpha$ in the trial wavefunction are systematically varied to minimize $E_V$, thereby finding the best possible approximation to the ground state energy and wavefunction.
+1. **Construct a Trial Wavefunction**: A physically motivated, parameterized trial wavefunction $\Psi_T(\mathbf{R}, \alpha)$ is constructed. A common form is the Slater-Jastrow wavefunction.
+2. **Monte Carlo Integration**: The Metropolis algorithm is used to generate a set of particle configurations $\{\mathbf{R}_i\}$ that are distributed according to the probability density $|\Psi_T|^2$.
+3. **Calculate Energy**: The variational energy is calculated as the average of the local energy over these sampled configurations: $E_V \approx \frac{1}{M} \sum_{i=1}^M E_L(\mathbf{R}_i)$.
+4. **Optimization**: The parameters $\alpha$ in the trial wavefunction are systematically varied to minimize $E_V$, thereby finding the best possible approximation to the ground state energy and wavefunction.
 
 The accuracy of VMC is entirely limited by the functional form chosen for the trial wavefunction.
 
@@ -70,9 +70,9 @@ The accuracy of VMC is entirely limited by the functional form chosen for the tr
 DMC is a **projector method** that improves upon VMC by stochastically evolving an ensemble of configurations to project out the true ground state from an initial trial wavefunction. It directly simulates the Schrödinger equation in imaginary time.
 
 The algorithm evolves a population of walkers through small time steps $\Delta\tau$, where each step involves:
-1.  **Diffusion**: Each walker undergoes a random displacement drawn from a Gaussian distribution, simulating the kinetic energy term.
-2.  **Drift**: To improve efficiency (**importance sampling**), walkers are also drifted towards regions where the trial wavefunction $\Psi_T$ is large.
-3.  **Branching**: Walkers are replicated or eliminated with a probability related to their local energy $E_L(\mathbf{R})$ compared to a reference energy. Walkers in low-energy regions are more likely to multiply, while those in high-energy regions are more likely to be removed.
+1. **Diffusion**: Each walker undergoes a random displacement drawn from a Gaussian distribution, simulating the kinetic energy term.
+2. **Drift**: To improve efficiency (**importance sampling**), walkers are also drifted towards regions where the trial wavefunction $\Psi_T$ is large.
+3. **Branching**: Walkers are replicated or eliminated with a probability related to their local energy $E_L(\mathbf{R})$ compared to a reference energy. Walkers in low-energy regions are more likely to multiply, while those in high-energy regions are more likely to be removed.
 
 After many iterations, the distribution of walkers converges to the product $\Psi_T(\mathbf{R})\Psi_0(\mathbf{R})$, from which the exact ground-state energy $E_0$ can be extracted. For bosonic systems, DMC can find the exact ground-state energy, limited only by statistical error. For fermionic systems, it is constrained by the fermion sign problem.
 

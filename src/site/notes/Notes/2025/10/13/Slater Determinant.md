@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025/10/13/slater-determinant/"}
+{"dg-publish":true,"permalink":"/notes/2025/10/13/slater-determinant/","tags":["#quantum-chemistry","#many-body-physics","#fermions"]}
 ---
 
 #quantum-chemistry #many-body-physics #fermions
