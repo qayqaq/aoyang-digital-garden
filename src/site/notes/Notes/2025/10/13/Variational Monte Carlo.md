@@ -9,7 +9,7 @@
 -   **Underlying Principle**: It combines two fundamental ideas: the **variational principle** of quantum mechanics, which guarantees the calculated energy is an upper bound to the true ground-state energy, and **Monte Carlo integration**, which is used to evaluate the necessary high-dimensional integrals.
 -   **How It Works**: The method involves (1) defining a physically-motivated, parameterized trial wavefunction, (2) using the Metropolis algorithm to sample configurations from the probability distribution defined by this wavefunction, and (3) optimizing the parameters to find the minimum possible energy for the chosen form of the wavefunction.
 -   **Key Limitation**: The accuracy of the Variational Monte Carlo (VMC) method is entirely limited by the functional form of the trial wavefunction. It is a biased method whose quality depends on the user's ability to construct a good ansatz.
--   **Primary Role**: VMC is used both as a standalone method for efficient, approximate calculations and as an essential first step for more accurate but computationally intensive methods like [[Notes/2025/10/13/Projector Quantum Monte Carlo\|Diffusion Monte Carlo (DMC)]].
+-   **Primary Role**: VMC is used both as a standalone method for efficient, approximate calculations and as an essential first step for more accurate but computationally intensive methods like [[Notes/2025/10/13/Diffusion Monte Carlo\|Diffusion Monte Carlo]].
 
 # Variational Monte Carlo
 
@@ -90,5 +90,5 @@ A VMC simulation typically proceeds through four main steps, which are iterated 
 
 ## 5. Conclusion
 
-Variational Monte Carlo is a cornerstone of modern computational physics. It provides an intuitive and powerful framework for approximating the ground state of quantum many-body systems by combining the rigor of the variational principle with the efficiency of Monte Carlo sampling. While its accuracy is fundamentally limited by the choice of the trial wavefunction, its favorable scaling and ability to explicitly treat correlations make it an invaluable tool. Furthermore, VMC is often the essential first step for more advanced and accurate techniques like [[Notes/2025/10/13/Projector Quantum Monte Carlo\|Diffusion Monte Carlo]], for which it provides the high-quality trial wavefunctions needed for importance sampling and the fixed-node approximation.
+Variational Monte Carlo is a cornerstone of modern computational physics. It provides an intuitive and powerful framework for approximating the ground state of quantum many-body systems by combining the rigor of the variational principle with the efficiency of Monte Carlo sampling. While its accuracy is fundamentally limited by the choice of the trial wavefunction, its favorable scaling and ability to explicitly treat correlations make it an invaluable tool. Furthermore, VMC is often the essential first step for more advanced and accurate techniques like [[Notes/2025/10/13/Diffusion Monte Carlo\|Diffusion Monte Carlo]], for which it provides the high-quality trial wavefunctions needed for importance sampling and the fixed-node approximation.
 
