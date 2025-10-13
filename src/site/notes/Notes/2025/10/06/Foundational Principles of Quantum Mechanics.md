@@ -9,7 +9,7 @@
 
 ## Introduction
 
-Quantum mechanics is the fundamental theory in physics that provides a description of the physical properties of nature at the scale of atoms and subatomic particles. It represents a profound departure from classical physics, introducing concepts such as quantization, wave-particle duality, superposition, and entanglement. The foundational principles, often presented as a set of postulates, form the mathematical and conceptual bedrock upon which the entire theory is built. These principles define how a physical system is described, how its properties are measured, and how it evolves over time.
+[[Notes/2025/10/13/Quantum Mechanics\|Quantum Mechanics]] is the fundamental theory in physics that provides a description of the physical properties of nature at the scale of atoms and subatomic particles. It represents a profound departure from classical physics, introducing concepts such as quantization, wave-particle duality, superposition, and entanglement. The foundational principles, often presented as a set of postulates, form the mathematical and conceptual bedrock upon which the entire theory is built. These principles define how a physical system is described, how its properties are measured, and how it evolves over time.
 
 ## The Postulates of Quantum Mechanics
 

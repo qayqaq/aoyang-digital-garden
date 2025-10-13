@@ -117,4 +117,4 @@ Primary-Replica replication is a powerful and enduring architecture for building
 - [[Notes/Arxiv/On the Trajectory Regularity of ODE-based Diffusion Sampling (2405.11326v1)\|On the Trajectory Regularity of ODE-based Diffusion Sampling (2405.11326v1)]]
 - [[Notes/Arxiv/A Phase Transition in Diffusion Models Reveals the Hierarchical Nature of Data (2402.16991v3)\|A Phase Transition in Diffusion Models Reveals the Hierarchical Nature of Data (2402.16991v3)]]
 - [[Excalidraw/Drawing 2025-10-12 14.15.50.excalidraw\|Drawing 2025-10-12 14.15.50.excalidraw]]
-- [[Excalidraw/Drawing 2025-10-12 14.17.49.excalidraw\|Drawing 2025-10-12 14.17.49.excalidraw]]
+- [[Drawing 2025-10-12 14.17.49.excalidraw\|Drawing 2025-10-12 14.17.49.excalidraw]]

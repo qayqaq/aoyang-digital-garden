@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025/10/13/quantum-mechanics/"}
+{"dg-publish":true,"permalink":"/notes/2025/10/13/quantum-mechanics/","tags":["#QuantumMechanics","#Physics","#Science"]}
 ---
 
 #QuantumMechanics #Physics #Science

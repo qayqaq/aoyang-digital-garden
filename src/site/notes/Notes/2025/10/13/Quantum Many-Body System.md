@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025/10/13/quantum-many-body-system/"}
+{"dg-publish":true,"permalink":"/notes/2025/10/13/quantum-many-body-system/","tags":["#QuantumManyBody","#Physics","#CondensedMatter","#QuantumMechanics"]}
 ---
 
 #QuantumManyBody #Physics #CondensedMatter #QuantumMechanics
