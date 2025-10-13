@@ -53,7 +53,7 @@ There are several distinct families of QMC algorithms, each with its own strengt
 
 ### 1. Variational Monte Carlo (VMC)
 
-VMC is based on the **variational principle** of quantum mechanics, which states that the expectation value of the energy for any trial wavefunction, $\Psi_T$, is always greater than or equal to the true ground-state energy, $E_0$.
+[[Notes/2025/10/13/Variational Monte Carlo\|Variational Monte Carlo]] is based on the **variational principle** of quantum mechanics, which states that the expectation value of the energy for any trial wavefunction, $\Psi_T$, is always greater than or equal to the true ground-state energy, $E_0$.
 $$
 E_V = \frac{\langle \Psi_T | \hat{H} | \Psi_T \rangle}{\langle \Psi_T | \Psi_T \rangle} = \frac{\int |\Psi_T(\mathbf{R})|^2 \left( \frac{\hat{H}\Psi_T(\mathbf{R})}{\Psi_T(\mathbf{R})} \right) d\mathbf{R}}{\int |\Psi_T(\mathbf{R})|^2 d\mathbf{R}} \ge E_0
 $$
@@ -67,7 +67,7 @@ The accuracy of VMC is entirely limited by the functional form chosen for the tr
 
 ### 2. Diffusion Monte Carlo (DMC)
 
-DMC is a **projector method** that improves upon VMC by stochastically evolving an ensemble of configurations to project out the true ground state from an initial trial wavefunction. It directly simulates the Schrödinger equation in imaginary time.
+[[Notes/2025/10/13/Diffusion Monte Carlo\|Diffusion Monte Carlo]] is a **projector method** that improves upon VMC by stochastically evolving an ensemble of configurations to project out the true ground state from an initial trial wavefunction. It directly simulates the Schrödinger equation in imaginary time.
 
 The algorithm evolves a population of walkers through small time steps $\Delta\tau$, where each step involves:
 1. **Diffusion**: Each walker undergoes a random displacement drawn from a Gaussian distribution, simulating the kinetic energy term.
@@ -78,13 +78,13 @@ After many iterations, the distribution of walkers converges to the product $\Ps
 
 ### 3. Path-Integral Monte Carlo (PIMC)
 
-PIMC is designed to study quantum systems at **finite temperatures**. It is based on the Feynman path-integral formulation of quantum mechanics, which establishes an isomorphism between a $d$-dimensional quantum system and a $(d+1)$-dimensional classical system.
+[[Notes/2025/10/13/Path-Integral Monte Carlo\|Path-Integral Monte Carlo]] is designed to study quantum systems at **finite temperatures**. It is based on the Feynman path-integral formulation of quantum mechanics, which establishes an isomorphism between a $d$-dimensional quantum system and a $(d+1)$-dimensional classical system.
 
 The method involves discretizing imaginary time $\beta = 1/(k_B T)$ and expressing the partition function, $Z = \text{Tr}(e^{-\beta \hat{H}})$, as a high-dimensional integral over "paths" of the particles in this extra dimension. Each quantum particle is mapped to a classical ring polymer, and the statistical properties of the system are obtained by sampling the configurations of these polymers using classical Monte Carlo techniques. PIMC is particularly powerful for studying bosonic systems, such as superfluidity in liquid helium. A prominent variant for fermionic lattice models is [[Notes/2025/10/13/Determinant Quantum Monte Carlo\|Determinant Quantum Monte Carlo]].
 
 ## The Fermion Sign Problem: The Grand Challenge
 
-The most significant obstacle for many QMC methods is the **fermion sign problem**. The Pauli exclusion principle dictates that a wavefunction for fermions must be antisymmetric with respect to the exchange of two identical particles. This means the wavefunction must have both positive and negative regions.
+The most significant obstacle for many QMC methods is the **fermion [[Notes/2025/10/13/Sign Problem\|Sign Problem]]**. The Pauli exclusion principle dictates that a wavefunction for fermions must be antisymmetric with respect to the exchange of two identical particles. This means the wavefunction must have both positive and negative regions.
 
 In methods like DMC and PIMC, this antisymmetry leads to configurations with negative statistical weights. Since Monte Carlo sampling requires a positive-definite probability distribution, one must sample using the absolute value of the weight and track the sign separately. The final result is obtained as the small difference between large, statistically fluctuating positive and negative contributions. As the system size increases or the temperature decreases, this statistical noise grows exponentially, overwhelming the physical signal.
 

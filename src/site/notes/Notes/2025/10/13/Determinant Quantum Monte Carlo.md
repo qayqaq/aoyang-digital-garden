@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025/10/13/determinant-quantum-monte-carlo/"}
+{"dg-publish":true,"permalink":"/notes/2025/10/13/determinant-quantum-monte-carlo/","tags":["#computational_physics","#condensed_matter","#quantum_mechanics","#monte_carlo","#fermions"]}
 ---
 
 #computational_physics #condensed_matter #quantum_mechanics #monte_carlo #fermions

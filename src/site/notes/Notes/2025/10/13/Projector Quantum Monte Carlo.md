@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025/10/13/projector-quantum-monte-carlo/"}
+{"dg-publish":true,"permalink":"/notes/2025/10/13/projector-quantum-monte-carlo/","tags":["#computational_physics","#quantum_mechanics","#numerical_methods","#monte_carlo"]}
 ---
 
 #computational_physics #quantum_mechanics #numerical_methods #monte_carlo

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025/10/13/imaginary-time/"}
+{"dg-publish":true,"permalink":"/notes/2025/10/13/imaginary-time/","tags":["#Physics","#QuantumMechanics","#StatisticalMechanics","#ComputationalPhysics","#TheoreticalPhysics"]}
 ---
 
 - Imaginary time, $\tau$, is a mathematical concept derived by performing a **Wick rotation** on real time, $t \rightarrow -i\tau$. It is not a time that can be physically experienced.
@@ -14,7 +14,7 @@
 
 ## 1. Introduction
 
-**Imaginary time** is a powerful and abstract mathematical concept used extensively in quantum mechanics, quantum field theory, and statistical mechanics. It is not a physical time that can be measured or experienced, but rather a formal tool derived from a mathematical procedure known as a **Wick rotation**. By replacing the real-valued time variable $t$ with a purely imaginary one, $\tau = it$, physicists can transform notoriously difficult problems involving quantum dynamics into more tractable problems in statistical mechanics. This transformation is fundamental to the path integral formulation of quantum mechanics and underpins many essential numerical techniques, such as [[Notes/2025/10/13/Determinant Quantum Monte Carlo\|Determinant Quantum Monte Carlo]].
+**Imaginary time** is a powerful and abstract mathematical concept used extensively in quantum mechanics, quantum field theory, and statistical mechanics. It is not a physical time that can be measured or experienced, but rather a formal tool derived from a mathematical procedure known as a **[[Notes/2025/10/13/Wick Rotation\|Wick Rotation]]**. By replacing the real-valued time variable $t$ with a purely imaginary one, $\tau = -it$, physicists can transform notoriously difficult problems involving quantum dynamics into more tractable problems in statistical mechanics. This transformation is fundamental to the path integral formulation of quantum mechanics and underpins many essential numerical techniques, such as [[Notes/2025/10/13/Determinant Quantum Monte Carlo\|Determinant Quantum Monte Carlo]].
 
 ## 2. The Wick Rotation: From Oscillations to Decay
 
@@ -26,13 +26,13 @@ t = -i\tau
 $$
 Substituting this into the time evolution operator yields a dramatic change:
 $$
-U(t) = e^{-i\hat{H}t/\hbar} \quad \xrightarrow{\text{Wick Rotation}} \quad e^{-i\hat{H}(-i\tau)/\hbar} = e^{-i^2\hat{H}\tau/\hbar} = e^{-\hat{H}\tau/\hbar}
+U(t) = e^{-i\hat{H}t/\hbar} \quad \xrightarrow{\text{Wick Rotation}} \quad e^{-i\hat{H}(-i\tau)/\hbar} = e^{i^2\hat{H}\tau/\hbar} = e^{-\hat{H}\tau/\hbar}
 $$
 The resulting operator, $e^{-\hat{H}\tau/\hbar}$, is no longer a complex, oscillating function but a **real, decaying exponential**. This mathematical property is far more convenient for analytical and numerical work, as it suppresses fluctuations rather than propagating them.
 
 ## 3. The Bridge to Statistical Mechanics
 
-One of the most profound consequences of introducing imaginary time is the formal connection it reveals between quantum mechanics and statistical mechanics. In statistical mechanics, the properties of a system in thermal equilibrium at a temperature $T$ are described by the **canonical partition function**:
+One of the most profound consequences of introducing imaginary time is the formal connection it reveals between quantum mechanics and statistical mechanics. In statistical mechanics, the properties of a system in thermal equilibrium at a temperature $T$ are described by the **canonical [[Notes/2025/10/13/Partition Function\|partition function]]**:
 $$
 Z = \text{Tr}(e^{-\beta \hat{H}})
 $$
@@ -41,10 +41,10 @@ where $\text{Tr}$ denotes the trace, and $\beta = 1/(k_B T)$ is the inverse temp
 By comparing the two expressions, we see a direct mathematical equivalence:
 > The quantum time evolution operator in imaginary time, $e^{-\hat{H}\tau/\hbar}$, is formally identical to the statistical mechanical density matrix operator, $e^{-\beta \hat{H}}$, provided we make the identification:
 > $$
-> \tau = \hbar\beta = \frac{\hbar}{k_B T}
-> $$
+\tau = \hbar\beta = \frac{\hbar}{k_B T}
+$$
 
-This remarkable correspondence implies that calculating the properties of a quantum system evolving for a finite duration in imaginary time is equivalent to calculating the thermal properties of a corresponding classical system at a specific temperature. The duration of imaginary time evolution is directly proportional to the inverse temperature.
+***This remarkable correspondence implies that calculating the properties of a quantum system evolving for a finite duration in imaginary time is equivalent to calculating the thermal properties of a corresponding classical system at a specific temperature. The duration of imaginary time evolution is directly proportional to the inverse temperature.***
 
 ## 4. Application in Path Integrals and Ground State Projection
 
@@ -68,7 +68,7 @@ As the imaginary time $\tau$ increases, the exponential terms $e^{-E_n\tau/\hbar
 $$
 \lim_{\tau \to \infty} e^{-\hat{H}\tau/\hbar} |\psi\rangle = c_0 e^{-E_0\tau/\hbar} |E_0\rangle
 $$
-Thus, evolving any initial state (that has a non-zero overlap with the ground state) for a sufficiently long imaginary time will "project out" the ground state of the system. This is the foundational principle of **projector Quantum Monte Carlo** methods.
+Thus, evolving any initial state (that has a non-zero overlap with the ground state) for a sufficiently long imaginary time will "project out" the ground state of the system. This is the foundational principle of **[[Notes/2025/10/13/Projector Quantum Monte Carlo\|Projector Quantum Monte Carlo]]** methods.
 
 ## 5. Conclusion
 

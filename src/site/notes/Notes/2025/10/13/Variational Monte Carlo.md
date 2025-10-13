@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025/10/13/variational-monte-carlo/"}
+{"dg-publish":true,"permalink":"/notes/2025/10/13/variational-monte-carlo/","tags":["#computational_physics","#quantum_mechanics","#numerical_methods","#monte_carlo","#variational_methods"]}
 ---
 
 #computational_physics #quantum_mechanics #numerical_methods #monte_carlo #variational_methods

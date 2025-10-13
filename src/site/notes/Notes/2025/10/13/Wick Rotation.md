@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025/10/13/wick-rotation/"}
+{"dg-publish":true,"permalink":"/notes/2025/10/13/wick-rotation/","tags":["#Physics","#QuantumFieldTheory","#StatisticalMechanics","#TheoreticalPhysics","#Mathematics"]}
 ---
 
 - The Wick rotation is a mathematical transformation, not a physical process, that treats time as a complex variable and rotates its axis by 90 degrees in the complex plane.

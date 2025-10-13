@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025/10/13/path-integral-monte-carlo/"}
+{"dg-publish":true,"permalink":"/notes/2025/10/13/path-integral-monte-carlo/","tags":["#computational_physics","#quantum_mechanics","#statistical_mechanics","#monte_carlo","#path_integral"]}
 ---
 
 #computational_physics #quantum_mechanics #statistical_mechanics #monte_carlo #path_integral

@@ -71,7 +71,7 @@ The Trotter-Suzuki decomposition is a cornerstone of computational physics and q
 
 In quantum statistical mechanics, physical properties are derived from the partition function $Z = \text{Tr}[e^{-\beta \hat{H}}]$, where $\beta$ is the inverse temperature. As seen in [[Notes/2025/10/13/Determinant Quantum Monte Carlo\|Determinant Quantum Monte Carlo]], calculating this trace is difficult when $\hat{H} = \hat{K} + \hat{V}$.
 
-By discretizing the "imaginary time" $\beta$ into $L$ small slices $\Delta\tau = \beta/L$, the Trotter formula allows us to write:
+By discretizing the "[[Notes/2025/10/13/Imaginary Time\|Imaginary Time]]" $\beta$ into $L$ small slices $\Delta\tau = \beta/L$, the Trotter formula allows us to write:
 $$
 Z = \text{Tr}[e^{-\beta (\hat{K} + \hat{V})}] \approx \text{Tr}\left[ (e^{-\Delta\tau \hat{K}} e^{-\Delta\tau \hat{V}})^L \right]
 $$

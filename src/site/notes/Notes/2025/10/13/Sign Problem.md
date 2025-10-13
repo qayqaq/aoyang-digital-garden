@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/2025/10/13/sign-problem/"}
+{"dg-publish":true,"permalink":"/notes/2025/10/13/sign-problem/","tags":["#computational_physics","#quantum_mechanics","#monte_carlo","#numerical_methods"]}
 ---
 
 #computational_physics #quantum_mechanics #monte_carlo #numerical_methods
