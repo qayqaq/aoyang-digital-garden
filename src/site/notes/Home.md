@@ -8,13 +8,5 @@ I'm a PhD student focusing on AI and ML, specifically generative modeling, decis
 
 ## Blog
 
+***01 Dec 2025***  [[Notes/2025/12/01/A Quick Journey to Basic Thermal Physics\|A Quick Journey to Basic Thermal Physics]]
 
-
-Here I document my learning and building adventure. Hope I can share my passion with you. Dive into some fascinating topics below:
-* [[Notes/2025/09/21/Computational Complexity\|Computational Complexity]].
-* [[Notes/2025/10/13/Quantum Mechanics\|Quantum Mechanics]].
-* [[Notes/2025/09/05/Riemannian Geometry\|Riemannian Geometry]].
-* [[Notes/2025/10/11/Computer Network\|Computer Network]].
-* [[Notes/2025/10/11/Web Development\|Web Development]].
-* [[Notes/2025/10/11/User Experience\|User Experience]].
-* ...
