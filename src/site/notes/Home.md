@@ -8,18 +8,6 @@ I'm a PhD student focusing on AI and ML, specifically generative modeling, decis
 
 ## Blog
 
-<div class="post-item">
-  <div class="post-date">13 Sep 2025</div>
-  <div class="post-content">
-    <div class="post-title">
+> [!Note]  [[Notes/2025/12/01/A Quick Journey to Basic Thermal Physics\|A Quick Journey to Basic Thermal Physics]]
 
-      [[Notes/2025/12/01/A Quick Journey to Basic Thermal Physics\|A Quick Journey to Basic Thermal Physics]]
 
-    </div>
-    <div class="post-desc">
-
-      To get a truly continuous personal agent, we’d love a model with **infinite memory**. (这里可以随便写 Markdown，包括粗体)
-
-    </div>
-  </div>
-</div>
