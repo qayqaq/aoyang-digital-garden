@@ -6,6 +6,8 @@ Welcome! I'm **Aoyang Qin**.
 
 I'm a PhD student focusing on AI and ML, specifically generative modeling, decision making and representation learning. I also co-developed [PicWiz](https://picwizai.com/), an intelligent image creation and editing tool. I share my learning and thoughts here.
 
+---
+
 ## Blog
 
 - [[Notes/2025/12/01/A Quick Journey to Basic Thermal Physics\|A Quick Journey to Basic Thermal Physics]] (01 Dec 2025)
