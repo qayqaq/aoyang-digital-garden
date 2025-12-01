@@ -13,3 +13,6 @@ I'm a PhD student focusing on AI and ML, specifically generative modeling, decis
 
 
 123
+
+- [[Notes/2025/12/01/A Quick Journey to Basic Thermal Physics\|A Quick Journey to Basic Thermal Physics]] (01 Dec 2025)
+
