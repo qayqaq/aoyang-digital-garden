@@ -10,5 +10,8 @@ I'm a PhD student focusing on AI and ML, specifically generative modeling, decis
 
 ## Blog
 
-- [[Notes/2025/12/01/A Quick Journey to Basic Thermal Physics\|A Quick Journey to Basic Thermal Physics]] (01 Dec 2025)
+- [[Notes/2025/12/01/A Quick Journey to Basic Thermal Physics\|A Quick Journey to Basic Thermal Physics]] (09 Dec 2025)
+- [[Notes/2025/12/09/Computer Network - From Notes to the Web\|Computer Network - From Notes to the Web]] (09 Dec 2025)
+             *Vercel, Claudfare, Obsidian*
+- [[Greatness behind OpenAI and Deepmind\|Greatness behind OpenAI and Deepmind]] (09 Dec 2025)
 
