@@ -36,16 +36,12 @@ If multiplicity $g$ already describes the number of system states, why do we nee
 
 This is not for mystification, but for two extremely pragmatic reasons:
 
-1. The numbers are too large:
-    
+1. **The numbers are too large**:
     For macroscopic objects, $g$ is an astronomical figure. Even for a small vial of gas, the order of magnitude of $g$ might be $10^{10^{23}}$. Handling such numbers is not only troublesome but mathematically unintuitive.
     
-2. We need Additivity:
-    
+2. We need **Additivity**:
     Imagine you have two glasses of water, System A and System B.
-    
     - If you view them as a whole, the total number of states is the **product** of their individual states: $g_{total} = g_A \times g_B$ (combinatorial principle).
-        
     - However, in macroscopic physics, we are used to "addition." Mass adds up, volume adds up, energy adds up. We want this quantity describing the "degree of disorder" to be additive as well.
         
 
@@ -73,8 +69,7 @@ $$\ln g_{total} = \ln (g_A \times g_B) = \ln g_A + \ln g_B = \sigma_A + \sigma_B
 
 Using only the single basic assumption of statistical mechanics, the multiplicity of the entire system is $g(U)=\sum_{U_1}g_1(U_1)g_2(U-U_1)\geq g_1(U_{10})g_2(U-U_{10})$, where $U_{10}$ is the initial energy of subsystem 1. Thus, $\log g(U)\geq \log g_1(U_{10})g_2(U_{20})$, which means $S\geq S_{10} + S_{20}$. Therefore, entropy increases after thermal contact, essentially proving that the Second Law of Thermodynamics is entirely correct.
 
-- Now, if we consider that only the _most probable configuration_ contributes to $g(U)$, i.e., $g(U)\approx g_1(\hat{U}_1)g_2(\hat{U}_2)$, then according to $\log g(U)\geq \log g_1(U_{10})g_2(U_{20})$, we have $\hat{S}_{1}+\hat{S}_{2}\geq\hat{S}_{10}+\hat{S}_{20}$. This yields a weaker form of the Second Law, often the one learned in introductory courses. However, this form is not entirely rigorous because, after thermal contact, we cannot strictly distinguish between $\hat{S}_{1}$ and $\hat{S}_{2}$. We can only say that when thermal contact is weak and heat exchange is not violent, the two subsystems relatively retain their "subjectivity," making this form correct. While this narrative is slightly blurred, it holds true for macroscopic systems we observe daily, though not absolutely.
-    
+Now, if we consider that only the _most probable configuration_ contributes to $g(U)$, i.e., $g(U)\approx g_1(\hat{U}_1)g_2(\hat{U}_2)$, then according to $\log g(U)\geq \log g_1(U_{10})g_2(U_{20})$, we have $\hat{S}_{1}+\hat{S}_{2}\geq\hat{S}_{10}+\hat{S}_{20}$. This yields a weaker form of the Second Law, often the one learned in introductory courses. However, this form is not entirely rigorous because, after thermal contact, we cannot strictly distinguish between $\hat{S}_{1}$ and $\hat{S}_{2}$. We can only say that when thermal contact is weak and heat exchange is not violent, the two subsystems relatively retain their "subjectivity," making this form correct. While this narrative is slightly blurred, it holds true for macroscopic systems we observe daily, though not absolutely.
 
 **Conclusion:** The system evolves toward thermal equilibrium because that equilibrium state possesses the greatest number of microstates. **Entropy increase is, fundamentally, the system evolving in the direction of "more possibilities."**
 
@@ -101,9 +96,7 @@ This implies that the mathematical quantity $\frac{\partial \sigma}{\partial U}$
 Let's look at the physical meaning of this quantity: it is the "rate of change of entropy with respect to energy."
 
 - When you give a cold object a little energy, its disorder (number of states) increases drastically. A cold object is "hungry" for energy ($\frac{\partial \sigma}{\partial U}$ is large).
-    
 - When you give a hot object a little energy, the increase in its disorder is negligible. A hot object is "indifferent" to energy ($\frac{\partial \sigma}{\partial U}$ is small).
-    
 
 Since a larger $\frac{\partial \sigma}{\partial U}$ corresponds to a "colder" object, this is inverse to our habitual definition of temperature (where a higher value means hotter).
 
@@ -114,9 +107,7 @@ $$\frac{1}{\tau} \equiv \left( \frac{\partial \sigma}{\partial U} \right)_{N,V}$
 This is the rigorous definition of temperature in statistical mechanics: **Temperature measures the system's willingness to "pay" energy in exchange for increased entropy.**
 
 - **Low Temperature** means a huge entropy gain for a tiny energy cost (high cost-performance ratio).
-    
 - **High Temperature** means even a large energy input yields minimal entropy increase.
-    
 
 If examined closely, one finds that the definition of temperature shares the same form as half-life; just as half-life shares dimensions with time, temperature shares dimensions with energy (in natural units).
 
@@ -131,11 +122,8 @@ First, we must answer a meta-question: Why do we always write entropy as $\sigma
 This is because, at the microscopic level, **Multiplicity ($g$)**, the number of microstates, depends entirely on the "boundary conditions" of the system:
 
 - **$U$ (Energy):** Determines the "budget" you can allocate for particle motion.
-    
 - **$V$ (Volume):** Determines the "space" available for particles to occupy (in quantum mechanics, volume determines the wavelength of standing waves, i.e., the energy level structure).
-    
 - **$N$ (Particle Number):** Determines how many "actors" are participating in this chaotic performance.
-    
 
 Since $g$ depends on $U, V, N$, entropy $\sigma$, as the logarithm of $g$, is naturally a function of these three variables.
 
@@ -148,11 +136,8 @@ Imagine replacing our rigid container with a cylinder equipped with a piston. No
 When volume changes, quantum mechanics tells us that energy levels actually shift: $E_s(V-\Delta V)\approx E_s(V)- \frac{\partial E_s}{\partial V} \Delta V$. With $E_s=\frac{\pi^2\hbar^2}{2mL^2}(n_x^2+n_y^2+n_z^2)\sim V^{-2/3}$, as volume decreases, energy levels rise. However, the levels do not cross; this relies on slow compression, technically called an **adiabatic process**. In such a process, from the perspective of quantum statistics, the distribution of system states remains unchanged. If the system occupied $\Omega = 1000$ microstates initially, it still occupies those 1000 microstates after slow compression. Since the number of microstates $\Omega$ is unchanged, entropy is invariant. Thus, we can more accurately write: $E_s(V-\Delta V)\approx E_s(V)- (\frac{\partial E_s}{\partial V})_\sigma \Delta V$, meaning entropy $\sigma$ is fixed.
 
 - Considering statistical mechanics, we calculate the statistical average: $\sum_sP(E_s)E_s(V-\Delta V)=\sum_sP(E_s)E_s(V)-P(E_s)(\frac{\partial E_s}{\partial V})_\sigma \Delta V$. Since $U=\sum_sP(s)E_s$, we have $U(V-\Delta V)=U(V)-(\frac{\partial U}{\partial V})_\sigma \Delta V$.
-    
 - From another angle, the change in energy is the work done by pressure: $\Delta U=p\Delta V$.
-    
 - Thus, we obtain $p=-(\frac{\partial U}{\partial V})_\sigma$. The negative sign exists because pressure doing positive work causes volume to decrease.
-    
 
 There is another non-trivial way to write Pressure: $p=\tau(\frac{\partial \sigma}{\partial V})_U$. The physics of this is harder to grasp—how can one guarantee $U$ is fixed? However, the mathematical derivation is simple. For a binary function $f(x,y)=C$, the formula holds: $(\frac{\partial y}{\partial x})_f=-(\frac{\partial f}{\partial x})_y/(\frac{\partial f}{\partial y})_x$. Letting $f\to \sigma, x\to V, y\to U$, we get $(\frac{\partial U}{\partial V})_\sigma=-(\frac{\partial \sigma}{\partial V})_U / (\frac{\partial \sigma}{\partial U})_V$, which implies $\frac{p}{\tau}=(\frac{\partial \sigma}{\partial V})_U$.
 
@@ -179,36 +164,26 @@ Suppose two systems are in thermal contact. One is a massive Heat Reservoir, and
 Defining $F=U-\tau\sigma$, we want to prove that after reaching thermal equilibrium (temperature fixed; reservoir temperature $\tau$, system temperature $\tau_S$), Free Energy becomes a minimum.
 
 - Since temperatures are equal at equilibrium, $\tau_S=(\frac{\partial U_S}{\partial \sigma_S})_V=\tau$, so $dU_S=\tau d\sigma_S$, leading to $dF_S=0$. This is why we define $F=U-\tau\sigma$ this way—to find an extremum. Recall that for a system and a reservoir, the equilibrium condition is maximizing $\sigma_1+\sigma_2$. We don't actually care about the reservoir, and minimizing system Free Energy $F$ gives us a way to ignore the reservoir while still determining equilibrium. Let's prove it is a minimum.
-    
 - Total entropy is $\sigma=\sigma_S+\sigma_R=\sigma_S(U_S)+\sigma_R(U-U_S)$. Since the reservoir is huge, we Taylor expand: $\approx\sigma_S(U_S)+\sigma_R(U)+(\frac{\partial\sigma_R}{\partial U_R})_V(-U_S)=\sigma_R(U)-U_S/\tau+\sigma_S=\sigma_R(U)-F_S/\tau$. Clearly, maximizing entropy is equivalent to minimizing Free Energy. Note that entropy belongs to the system plus reservoir, but free energy belongs only to the system.
-    
 - $\sigma=\text{const}-\frac{1}{\tau} F_S$. This is a beautiful result. With free energy, we can disregard the reservoir. The reservoir contributes only a $\tau$, which is a fixed constant at equilibrium.
-    
 
 #### 2. Chemical Potential: The Driving Force of Particle Flow
 
 Now we release the final variable: particle number $N$. We consider a system that can exchange not just energy, but also particles. For example, two systems placed on a reservoir at temperature $\tau$, connected by a small tube for particle exchange. After some time, they reach **diffusive equilibrium**. (Note: previously we discussed thermal equilibrium $\tau_1=\tau_2=\tau$). In describing this process, we derive the concept of chemical potential.
 
 - Crucially, $\Delta N_1=-\Delta N_2$.
-    
 - Recalling that free energy $F$ must be minimized ($dF=0$), we have $\frac{\partial F}{\partial N_1} d N_1+\frac{\partial F}{\partial N_2} d N_2=0$, implying $\left(\frac{\partial F}{\partial N_1}\right)_{V, \tau}=\left(\frac{\partial F}{\partial N_2}\right)_{V, \tau}$.
-    
 
 We introduce the **Weak Link Assumption**: Assume the tube is thin enough that the two systems are statistically independent (so $F\approx F_1+F_2=U_1+U_2-\tau\left(\sigma_1+\sigma_2\right)$), but wide enough to allow particle exchange.
 
 - Thus, $\left(\frac{\partial F_1}{\partial N_1}\right)_{V, \tau}=\left(\frac{\partial F_2}{\partial N_2}\right)_{V, \tau}$. This is the equilibrium condition.
-    
 - From this, we define chemical potential: $\mu_1=\left(\frac{\partial F_1}{\partial N_1}\right)_{V, \tau}=\left(\frac{\partial F_2}{\partial N_2}\right)_{V, \tau}=\mu_2$.
-    
 
 You might ask if a single system needs a chemical potential, since the definition seems to require two. In fact, we can draw an analogy with temperature:
 
 - An **isolated closed system** needs neither $\tau$ nor $\mu$. This is the **_microcanonical ensemble_**.
-    
 - If this system contacts a heat reservoir, we need $\tau$ but not $\mu$ to describe it. This is the **_canonical ensemble_** (most common in traditional thermal physics).
-    
 - If this system contacts a particle reservoir, we don't need $\tau$ but need $\mu$. While such systems exist (where particles are "virtual," carrying no energy, like information), they are rare in standard material physics.
-    
 - If the system contacts both a heat and particle reservoir, we need both $\tau$ and $\mu$. This is the **_grand canonical ensemble_**.
     
 
@@ -230,7 +205,7 @@ We have defined entropy, temperature, pressure, and chemical potential. Now, we 
 
 Let's play a differential game to see what results from starting with different functions.
 
-Perspective 1: Entropy $\sigma(U, V)$
+**Perspective 1: Entropy** $\sigma(U, V)$
 
 If we view entropy as a function of internal energy and volume, its total differential is:
 
@@ -250,7 +225,7 @@ Here $\tau d\sigma$ corresponds to heat $dQ$, and $-P dV$ to work $dW$.
 
 Conclusion: The First Law of Thermodynamics (Energy Conservation) is mathematically equivalent to the fact that "entropy is a function of state variables $U$ and $V$."
 
-Perspective 2: Internal Energy $U(\sigma, V)$
+**Perspective 2: Internal Energy** $U(\sigma, V)$
 
 If we flip the perspective and view internal energy as a function of entropy and volume:
 
@@ -258,7 +233,7 @@ $$d U=\left(\frac{\partial U}{\partial \sigma}\right)_V d \sigma+\left(\frac{\pa
 
 This is still the First Law, but the viewpoint has shifted: Temperature is the slope of internal energy vs. entropy, and Pressure is the slope of internal energy vs. volume.
 
-Perspective 3: Free Energy $F(\tau, V)$
+**Perspective 3: Free Energy $F(\tau, V)$**
 
 This is the most brilliant step. Recall $F = U - \tau \sigma$. Differentiating:
 
@@ -285,11 +260,8 @@ The answer is yes. The soul of thermal physics is $d\sigma = 0$.
 Let's prove this with a thought experiment. Consider two systems $S_1$ and $S_2$ in thermal contact. We allow the most thorough exchange:
 
 - **Energy Exchange:** $U_1 + U_2 = U_{const}$
-    
 - **Volume Exchange** (Movable partition): $V_1 + V_2 = V_{const}$
-    
 - **Particle Exchange** (Perforated partition): $N_1 + N_2 = N_{const}$
-    
 
 When does the system reach equilibrium? When total entropy is maximized, i.e., $d\sigma = 0$.
 
@@ -308,11 +280,8 @@ $$\left(\frac{\partial \sigma_1}{\partial U_1}-\frac{\partial \sigma_2}{\partial
 Since $U, V, N$ are independent, for the equation to hold, the terms in brackets must be zero. This leads directly to all equilibrium conditions:
 
 1. **Energy Equilibrium:** $\frac{1}{\tau_1} = \frac{1}{\tau_2}$ (Equal Temperature)
-    
 2. **Volume Equilibrium:** $\frac{P_1}{\tau_1} = \frac{P_2}{\tau_2}$
-    
 3. **Particle Equilibrium:** $-\frac{\mu_1}{\tau_1} = -\frac{\mu_2}{\tau_2}$
-    
 
 > **Key Insight:** Strictly speaking, the conditions for equilibrium are the equality of $P/\tau$ and $\mu/\tau$. It is only because we typically also exchange energy (making $\tau$ equal) that we get the familiar $P_1=P_2$ and $\mu_1=\mu_2$. All thermodynamic quantities essentially emerge from the extremum condition $d\sigma=0$.
 
@@ -361,11 +330,8 @@ This is the magic of Duality: it changes the independent variable from $\sigma$ 
 This holds for multivariate functions $F(\tau, V, N) = U(\sigma, V, N) - \tau\sigma$, preserving other partial derivatives:
 
 - $\left(\frac{\partial F}{\partial \tau}\right)_{N, V} = -\sigma$ (New)
-    
 - $\left(\frac{\partial F}{\partial V}\right)_{\tau, N} = \left(\frac{\partial U}{\partial V}\right)_{\sigma, N} = -P$ (Unchanged)
-    
 - $\left(\frac{\partial F}{\partial N}\right)_{\tau, V} = \left(\frac{\partial U}{\partial N}\right)_{\sigma, V} = \mu$ (Unchanged)
-    
 
 We have now derived all thermodynamic relations and understood why Free Energy acts as a potential function tailored for a reality where "temperature is easier to control than entropy."
 
@@ -375,11 +341,11 @@ We have now derived all thermodynamic relations and understood why Free Energy a
 
 After four chapters, we have examined the system from three angles: Microscopic Counting (Entropy), Energy Conservation (Internal Energy), and Pragmatism (Free Energy). It seems like the blind men and the elephant—different parts, different descriptions. If we align the three potentials $\sigma, U, F$ and examine their partial derivatives, we get this symmetrical table:
 
-|**Quantity**|**Entropy Representation σ(U,V,N)**|**Internal Energy Representation U(σ,V,N)**|**Free Energy Representation F(τ,V,N)**|
-|---|---|---|---|
-|**Temp $\tau$**|$\frac{1}{\tau}=\left(\frac{\partial \sigma}{\partial U}\right)_{V, N}$|$\tau=\left(\frac{\partial U}{\partial \sigma}\right)_{V, N}$|$\tau \text{ (Independent Variable)}$<br><br>  <br>  <br><br>$\sigma=-\left(\frac{\partial F}{\partial \tau}\right)_{N,V}$|
-|**Pressure $P$**|$\frac{P}{\tau}=\left(\frac{\partial \sigma}{\partial V}\right)_{U, N}$|$-P=\left(\frac{\partial U}{\partial V}\right)_{\sigma, N}$|$-P=\left(\frac{\partial F}{\partial V}\right)_{\tau, N}$|
-|**Chem Pot $\mu$**|$-\frac{\mu}{\tau}=\left(\frac{\partial \sigma}{\partial N}\right)_{U, V}$|$\mu=\left(\frac{\partial U}{\partial N}\right)_{\sigma, V}$|$\mu=\left(\frac{\partial F}{\partial N}\right)_{\tau, V}$|
+| **Quantity**       | **Entropy Representation σ(U,V,N)**                                        | **Internal Energy Representation U(σ,V,N)**                   | **Free Energy Representation F(τ,V,N)**                       |
+| ------------------ | -------------------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- |
+| **Temp $\tau$**    | $\frac{1}{\tau}=\left(\frac{\partial \sigma}{\partial U}\right)_{V, N}$    | $\tau=\left(\frac{\partial U}{\partial \sigma}\right)_{V, N}$ | $\sigma=-\left(\frac{\partial F}{\partial \tau}\right)_{N,V}$ |
+| **Pressure $P$**   | $\frac{P}{\tau}=\left(\frac{\partial \sigma}{\partial V}\right)_{U, N}$    | $-P=\left(\frac{\partial U}{\partial V}\right)_{\sigma, N}$   | $-P=\left(\frac{\partial F}{\partial V}\right)_{\tau, N}$     |
+| **Chem Pot $\mu$** | $-\frac{\mu}{\tau}=\left(\frac{\partial \sigma}{\partial N}\right)_{U, V}$ | $\mu=\left(\frac{\partial U}{\partial N}\right)_{\sigma, V}$  | $\mu=\left(\frac{\partial F}{\partial N}\right)_{\tau, V}$    |
 
 We must interpret three layers of information from this table.
 
@@ -388,11 +354,8 @@ We must interpret three layers of information from this table.
 While every equation is mathematically valid, physicists typically use the **diagonal from top-left to bottom-right** to establish definitions:
 
 - **Row 1, Col 1:** $\frac{1}{\tau} = \frac{\partial \sigma}{\partial U}$. The **Statistical Mechanics Definition** of temperature.
-    
 - **Row 2, Col 2:** $-P = \frac{\partial U}{\partial V}$. The **Mechanical Definition** of pressure (Generalized Force).
-    
 - **Row 3, Col 3:** $\mu = \frac{\partial F}{\partial N}$. The **Practical Definition** of chemical potential (change in free energy when adding a particle at constant $T$).
-    
 
 #### 2. "The One Truth" and Redundancy
 
@@ -401,25 +364,22 @@ Do you need to memorize all 9 formulas? No.
 The last two columns are technically "redundant." The entire physics is contained in the first column (Entropy).
 
 - Once you have $\sigma = \sigma(U, V, N)$, you have the universe.
-    
 - Column 2 ($U$) is just an inverse function.
-    
 - Column 3 ($F$) is just a Legendre transform.
-    
-    Physicists keep them not for new information, but for coordinate convenience (it is easier to hold $\tau$ constant than $\sigma$).
-    
+
+Physicists keep them not for new information, but for coordinate convenience (it is easier to hold $\tau$ constant than $\sigma$).
 
 #### 3. Mathematical Bridges
 
 How do you derive Column 2 from Column 1? It's just calculus.
 
-Bridge 1: Reciprocal Relation
+**Bridge 1: Reciprocal Relation**
 
 Comparing Row 1: $\frac{1}{\tau} = (\frac{\partial \sigma}{\partial U})$ vs $\tau = (\frac{\partial U}{\partial \sigma})$.
 
 This uses the Inverse Function Rule: $\frac{d y}{d x} = \frac{1}{\frac{d x}{d y}}$. This proves the equivalence of the temperature definitions.
 
-Bridge 2: Cyclic Relation
+**Bridge 2: Cyclic Relation**
 
 Comparing Row 3: $-\frac{\mu}{\tau} = (\frac{\partial \sigma}{\partial N})_U$ vs $\mu = (\frac{\partial U}{\partial N})_\sigma$.
 
@@ -440,9 +400,7 @@ Substituting definitions from Column 2 (numerator is $\mu$, denominator is $\tau
 We spent chapters building thermodynamics from microscopic counting ($g$). But in practice, **Conceptual Logic** and **Computational Logic** are often opposites.
 
 - **Concept:** $g \to \sigma \to \tau \to \text{Equilibrium}$.
-    
 - **Computation:** $g$ is usually despairingly hard to calculate (imagine counting permutations of $10^{23}$ particles).
-    
 
 So, physicists invented a "Reverse Channel": Write the energy model, calculate the **Partition Function ($Z$)**, get Free Energy ($F$), and then derive Entropy ($\sigma$) and Multiplicity ($g$).
 
@@ -481,15 +439,10 @@ Using $P(s) = e^{(F - E_s)/\tau}$ and summing to 1 ($e^{F/\tau} Z = 1$), we get:
 $$F = - \tau \ln Z$$
 
 **The Computational U-Turn:**
-
 1. **List Microscopic Model** (Energy levels $E_n$).
-    
 2. **Sum to find $Z$** (Geometric series or Gaussian integral).
-    
 3. **Find $F$** ($F = -\tau \ln Z$).
-    
 4. **Find Everything** ($\sigma$, $P$, $\mu$, $U$ via derivatives of $F$).
-    
 
 #### 3. Gibbs Sum: When Particles Flow
 
@@ -524,24 +477,16 @@ Finally, we address the elephant in the room—**Quantum Mechanics**. Previously
 In the quantum world, identical particles are fundamentally indistinguishable. Exchanging two particles leaves the probability density $|\Psi|^2$ unchanged: $\Psi(1, 2) = \pm \Psi(2, 1)$.
 
 This $\pm$ sign divides the universe:
-
 - **Bosons (+1):** Social, like to cluster (Photons, Helium-4).
-    
 - **Fermions (-1):** Anti-social, follow **Pauli Exclusion**, never occupy the same state (Electrons, Protons).
-    
 
 Counting Changes:
 
 Putting 2 particles in 4 energy levels:
-
 - **Classical:** $4^2 = 16$ ways.
-    
 - **Bosons:** 10 ways (Enhanced probability of being together).
-    
 - Fermions: 6 ways (Zero probability of being together).
-    
     Since $g$ changes, Entropy $\sigma$ and macro-properties change.
-    
 
 #### 2. From Particle View to Orbital View
 
@@ -551,7 +496,7 @@ Since the number of particles in a level can vary, we use the Gibbs Sum.
 
 #### 3. Fermi-Dirac and Bose-Einstein Distributions
 
-Fermions:
+**Fermions:**
 
 Occupancy $n$ is 0 or 1.
 
@@ -563,7 +508,7 @@ $$\langle n \rangle = \frac{1}{e^{(\varepsilon-\mu)/\tau} + 1}$$
 
 The $+1$ in the denominator is the mathematical signature of Fermion "social anxiety."
 
-Bosons:
+**Bosons:**
 
 Occupancy $n$ is $0, 1, \dots \infty$. Geometric series sum:
 
@@ -592,17 +537,11 @@ However, when we cool down past the Quantum Concentration ($n_Q$), miracles happ
 ### Conclusion: Order Emerging from Ignorance
 
 Our journey ends here. Let us look back at the structure we built.
-
 1. We started with an admission of "ignorance": the **Principle of Equal Probability**.
-    
 2. We quantified "possibility" via **Counting** and **Entropy**.
-    
 3. By maximizing entropy, we discovered macroscopic islands of **Temperature, Pressure, and Chemical Potential** emerging from the chaotic microscopic sea.
-    
 4. We navigated via **Free Energy** and used **Partition Functions** as our compass.
-    
 5. Finally, injecting Quantum nature, the framework predicted states of matter under extreme conditions.
-    
 
 Notably, we barely mentioned specific substances. We didn't calculate the specific heat of copper or the rotation of oxygen. That is the charm of statistical mechanics: **It is a universal grammar, not a specific story.**
 
