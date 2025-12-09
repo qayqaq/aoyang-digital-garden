@@ -12,6 +12,8 @@ This is a story about 'More is Different.' This article aims to strip away compl
 
 _Note: This article assumes the reader possesses basic knowledge and concepts of quantum mechanics, as statistical mechanics is inherently quantum in nature. We are, in effect, calculating the statistical effects of massive quantities of quanta._
 
+![image.png](/img/user/image.png)
+
 ---
 
 ### Chapter 1: The Art of Counting — From Multiplicity to Thermal Equilibrium
