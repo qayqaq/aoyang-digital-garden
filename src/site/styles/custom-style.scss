@@ -2,12 +2,22 @@ body {
     /***
       ADD YOUR CUSTOM STYLING HERE. (INSIDE THE body {...} section.)
       IT WILL TAKE PRECEDENCE OVER THE STYLING IN THE STYLE.CSS FILE.
-   ***/
-    //  background-color: white;
-    //  .content {
-    //   font-size: 14px;
-    //  }
-    //  h1 {
-    //   color: black;
-    //  }
+    ***/
+
+    /* 核心修改：通过设置 body 的字号来控制全局 */
+    /* 默认通常是 16px，改为 14px 或 15px 会感觉明显变小 */
+    font-size: 14px; 
+
+    /* 确保内容区域跟随 body 的缩小 */
+    .content {
+        font-size: 1rem; /* 1rem 代表 100% 继承 body 的 14px */
+        line-height: 1.5; /* 字体变小后，可以适当缩小行高 */
+    }
+
+    /* 如果你觉得标题还是太大，也可以按比例缩小 */
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.3rem; }
+    
+    /* 侧边栏和 UI 文字通常会自动跟随 body 缩小 */
 }
