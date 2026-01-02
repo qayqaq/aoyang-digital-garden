@@ -16,3 +16,7 @@ I'm a PhD student focusing on AI and ML, specifically generative modeling, decis
 - [[Notes/2025/12/09/Computer Network - From Notes to the Web\|Computer Network - From Notes to the Web]] (08 Dec 2025)
   *Vercel, Claudflare, Obsidian*
 
+## Quantum Computing
+
+- [[Notes/2026/01/02/01 Fundamental Definitions of Quantum Computing\|01 Fundamental Definitions of Quantum Computing]]
+
