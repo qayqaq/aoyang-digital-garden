@@ -11,6 +11,7 @@ I'm a PhD student focusing on AI and ML, specifically generative modeling, decis
 ## Blog
 
 - [[Greatness behind OpenAI and Deepmind\|Greatness behind OpenAI and Deepmind]] ()
+- [[What Happens When Magnet Attracts Metal?\|What Happens When Magnet Attracts Metal?]] ()
 - [[Notes/2025/12/01/A Journey Through Statistical Mechanics\|A Journey Through Statistical Mechanics]] (09 Dec 2025)
   *Physics, Statistical Mechanics*
 - [[Notes/2025/12/09/Computer Network - From Notes to the Web\|Computer Network - From Notes to the Web]] (08 Dec 2025)
@@ -18,5 +19,7 @@ I'm a PhD student focusing on AI and ML, specifically generative modeling, decis
 
 ## Quantum Computing
 
-- [[Notes/2026/01/02/01 Fundamental Definitions of Quantum Computing\|01 Fundamental Definitions of Quantum Computing]]
+- [[Notes/2026/01/02/Fundamentals of Quantum Computing\|Fundamentals of Quantum Computing]]
+- [[Notes/2026/01/02/Measurement, Protocols, Circuits\|Measurement, Protocols, Circuits]]
+- 
 
