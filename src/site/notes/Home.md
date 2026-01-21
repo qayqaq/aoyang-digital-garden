@@ -25,7 +25,5 @@ I'm a PhD student focusing on AI and ML, specifically generative modeling, decis
 - [[Notes/2026/01/02/Fundamentals of Quantum Computing\|Fundamentals of Quantum Computing]]
 - [[Notes/2026/01/02/Measurement, Protocols, Circuits\|Measurement, Protocols, Circuits]]
 
-> [!Example]
-> asdasf
 
 
