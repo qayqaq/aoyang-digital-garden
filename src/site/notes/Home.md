@@ -17,9 +17,7 @@ I'm a PhD student focusing on AI and ML, specifically generative modeling, decis
 - [[Notes/2026/01/17/What Happens When Magnet Attracts Metal?\|What Happens When Magnet Attracts Metal?]] ()
 - [[Notes/2026/01/19/A Journey Through Classical Mechanics\|A Journey Through Classical Mechanics]] ()
 - [[Notes/2025/12/01/A Journey Through Statistical Mechanics\|A Journey Through Statistical Mechanics]] (09 Dec 2025)
-  *Physics, Statistical Mechanics*
 - [[Notes/2025/12/09/Computer Network - From Notes to the Web\|Computer Network - From Notes to the Web]] (08 Dec 2025)
-  *Vercel, Claudflare, Obsidian*
 
 ## Quantum Computing
 
