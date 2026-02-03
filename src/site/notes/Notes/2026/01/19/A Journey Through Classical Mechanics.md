@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/notes/2026/01/19/a-journey-through-classical-mechanics/"}
 ---
 
-(待完善)
+（待润色）
 ## 1. Basic Mathematics and Physics
 
 Outline: 
