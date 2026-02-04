@@ -139,13 +139,7 @@ We have already observed the "emergence" of spin from the dynamical level. Howev
 
 The basic definition of SU(2) is:
 $$\begin{aligned} \mathrm{SU}(2) & \equiv\left\{U\left|U \in \mathrm{GL}(2, \mathbb{C}), U^{\dagger} U=1_{2 \times 2},|U|=1\right\}\right. \\  & \equiv\left\{\left[\begin{array}{cc} a & b \\ -b^* & a^* \end{array}\right]\left|a, b \in \mathbb{C},|a|^2+|b|^2=1\right\}\right. \\ & \equiv\left\{\left.U(\vec{n}, \omega)=e^{i \frac{\omega}{2} \vec{n} \cdot \vec{\sigma}} \right\rvert\, \omega \in[0, \pi], \vec{n} \text { is the set of all 3D real unit vectors }\right\} \end{aligned}$$
-If we use real parameters $x_i\in\mathbb{R}$ and let $a=x_4+ix_3, b=x_2+ix_1$ to describe it: $$U=\left[\begin{array}{cc}
-a & b \\
--b^* & a^*
-\end{array}\right]=\left[\begin{array}{cc}
-x_4+i x_3 & x_2+i x_1 \\
--x_2+i x_1 & x_4-i x_3
-\end{array}\right]$$The constraint becomes $x_1^2+x_2^2+x_3^2+x_4^2=1$, indicating that SU(2) as a manifold is $S^3$, a 3-sphere (hypersphere). Its $T^2$-fibration is described as:
+If we use real parameters $x_i\in\mathbb{R}$ and let $a=x_4+ix_3, b=x_2+ix_1$ to describe it: $$U=\left[\begin{array}{cc}a & b \\-b^* & a^*\end{array}\right]=\left[\begin{array}{cc}x_4+i x_3 & x_2+i x_1 \\-x_2+i x_1 & x_4-i x_3\end{array}\right]$$The constraint becomes $x_1^2+x_2^2+x_3^2+x_4^2=1$, indicating that SU(2) as a manifold is $S^3$, a 3-sphere (hypersphere). Its $T^2$-fibration is described as:
 $$\left\{\begin{array}{l} x_1=\sin \theta \cos \varphi \\ x_2=\sin \theta \sin \varphi \end{array},\left\{\begin{array}{l} x_3=\cos \theta \cos \chi \\ x_4=\cos \theta \sin \chi \end{array}, \text { where } \theta \in[0, \pi / 2] ; \varphi, \chi \in[0,2 \pi]\right. \text {. }\right.$$
 This can be described using two opposing conical surfaces for $\chi, \varphi$ and an axis $\theta$. At $\theta=0$ or $\theta=\pi/2$, one parameter becomes degenerate. It can also be described as a "doughnut" (solid torus) that scales with $\theta$, causing a parameter to degenerate at the endpoints. When $\theta=0$, the doughnut is a circle with zero width; only $\chi$ is valid along the circle, while $\varphi$ is invalid because the circle has no width. When $\theta=\pi/2$, the doughnut becomes a sphere with no hole, so $\chi$ becomes invalid and only $\varphi$ is effective.
 
