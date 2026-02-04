@@ -11,9 +11,10 @@ I'm a PhD student focusing on AI and ML, specifically generative modeling, decis
 ## Blog
 
 - [[Greatness behind OpenAI and Deepmind\|Greatness behind OpenAI and Deepmind]] ()
+- [[Notes/2026/01/23/A Journey Through Condensed Matter Physics\|A Journey Through Condensed Matter Physics]] ()
+- [A Journey Through Quantitative Investment] ()
 - [[A Journey Through Quantum Mechanics\|A Journey Through Quantum Mechanics]] ()
 - [[A Journey Through Analytical Mechanics\|A Journey Through Analytical Mechanics]] ()
-- [[Notes/2026/01/23/A Journey Through Condensed Matter Physics\|A Journey Through Condensed Matter Physics]] ()
 - [[Notes/2026/01/17/What Happens When Magnet Attracts Metal?\|What Happens When Magnet Attracts Metal?]] (04 Feb 2026) [[Notes/2026/02/03/磁铁吸引金属时发生了什么？\|中文版]]
 - [[Notes/2026/01/19/A Journey Through Classical Mechanics\|A Journey Through Classical Mechanics]] (05 Jan 2026)
 - [[Notes/2025/12/01/A Journey Through Statistical Mechanics\|A Journey Through Statistical Mechanics]] (09 Dec 2025)
