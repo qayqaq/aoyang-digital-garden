@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/notes/2026/01/17/what-happens-when-magnet-attracts-metal/"}
 ---
 
-（待润色）
+(To be rephrased)
 
 When you witness a magnet pulling a piece of iron, you are seeing one of the most profound "glitches" in classical physics. To understand why that piece of metal moves, we must dismantle our classical intuition and rebuild it using the tools of Dirac, Pauli, and Heisenberg.
 
