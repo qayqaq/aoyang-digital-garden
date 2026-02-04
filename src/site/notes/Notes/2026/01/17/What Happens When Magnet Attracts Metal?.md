@@ -139,7 +139,7 @@ We have already observed the "emergence" of spin from the dynamical level. Howev
 
 The basic definition of SU(2) is:
 $$\begin{aligned} \mathrm{SU}(2) & \equiv\left\{U\left|U \in \mathrm{GL}(2, \mathbb{C}), U^{\dagger} U=1_{2 \times 2},|U|=1\right\}\right. \\  & \equiv\left\{\left[\begin{array}{cc} a & b \\ -b^* & a^* \end{array}\right]\left|a, b \in \mathbb{C},|a|^2+|b|^2=1\right\}\right. \\ & \equiv\left\{\left.U(\vec{n}, \omega)=e^{i \frac{\omega}{2} \vec{n} \cdot \vec{\sigma}} \right\rvert\, \omega \in[0, \pi], \vec{n} \text { is the set of all 3D real unit vectors }\right\} \end{aligned}$$
-If we use real parameters $x_i\in\mathbb{R}$ and let $a=x_4+ix_3, b=x_2+ix_1$ to describe it: $$U=\left[\begin{array}{cc}a & b \\-b^* & a^*\end{array}\right]=\left[\begin{array}{cc}x_4+i x_3 & x_2+i x_1 \\-x_2+i x_1 & x_4-i x_3\end{array}\right]$$The constraint becomes $x_1^2+x_2^2+x_3^2+x_4^2=1$, indicating that SU(2) as a manifold is $S^3$, a 3-sphere (hypersphere). Its $T^2$-fibration is described as:
+If we use real parameters $x_i\in\mathbb{R}$ and let $a=x_4+ix_3, b=x_2+ix_1$ to describe it: $$\begin{aligned}U=\left[\begin{array}{cc}a & b \\-b^* & a^*\end{array}\right]=\left[\begin{array}{cc}x_4+i x_3 & x_2+i x_1 \\-x_2+i x_1 & x_4-i x_3\end{array}\right]\end{aligned}$$The constraint becomes $x_1^2+x_2^2+x_3^2+x_4^2=1$, indicating that SU(2) as a manifold is $S^3$, a 3-sphere (hypersphere). Its $T^2$-fibration is described as:
 $$\left\{\begin{array}{l} x_1=\sin \theta \cos \varphi \\ x_2=\sin \theta \sin \varphi \end{array},\left\{\begin{array}{l} x_3=\cos \theta \cos \chi \\ x_4=\cos \theta \sin \chi \end{array}, \text { where } \theta \in[0, \pi / 2] ; \varphi, \chi \in[0,2 \pi]\right. \text {. }\right.$$
 This can be described using two opposing conical surfaces for $\chi, \varphi$ and an axis $\theta$. At $\theta=0$ or $\theta=\pi/2$, one parameter becomes degenerate. It can also be described as a "doughnut" (solid torus) that scales with $\theta$, causing a parameter to degenerate at the endpoints. When $\theta=0$, the doughnut is a circle with zero width; only $\chi$ is valid along the circle, while $\varphi$ is invalid because the circle has no width. When $\theta=\pi/2$, the doughnut becomes a sphere with no hole, so $\chi$ becomes invalid and only $\varphi$ is effective.
 
@@ -195,10 +195,10 @@ We arrive at the conclusion that, based solely on the Lie algebra structure, the
 
 However, the geometric structure of SU(2) is different from SO(3). It is the Universal Covering Group of SO(3) (a 2:1 cover). In SU(2), the parameter $\theta = 2\pi$ corresponds not to the identity element, but to $U(2\pi)=-I\neq I$; only a rotation of $4\pi$ corresponds to the identity element. We find that the behavior of $D(2\pi)$ perfectly matches the behavior of the SU(2) group itself. We have effectively obtained an instance of Bargmann's Theorem on SO(3) and SU(2): the projective representations of the non-simply connected Lie group SO(3) are equivalent to the ordinary representations of its universal covering group SU(2). The final mapping relationship is:
 
-|**Spin j**|**In Lie Algebra**|**In SU(2)**|**In SO(3)**|**Physical Particle**|
-|---|---|---|---|---|
-|**Integer ($0, 1, \dots$)**|Exists|**Ordinary Rep.** (but not faithful, cannot distinguish $\pm I$)|**Ordinary Rep.**|Bosons (Photons, etc.)|
-|**Half-Integer ($1/2, \dots$)**|Exists|**Ordinary Rep.** (Faithful Rep.)|**Projective Rep.** (Multi-valued)|Fermions (Electrons, etc.)|
+| **Spin j**                          | **In Lie Algebra** | **In SU(2)**                                                     | **In SO(3)**                       | **Physical Particle**      |
+| ----------------------------------- | ------------------ | ---------------------------------------------------------------- | ---------------------------------- | -------------------------- |
+| **Integer <br>($0, 1, \dots$)**     | Exists             | **Ordinary Rep.** (but not faithful, cannot distinguish $\pm I$) | **Ordinary Rep.**                  | Bosons (Photons, etc.)     |
+| **Half-Integer <br>($1/2, \dots$)** | Exists             | **Ordinary Rep.** (Faithful Rep.)                                | **Projective Rep.** (Multi-valued) | Fermions (Electrons, etc.) |
 
 "Spin" is able to "emerge" from this abstract mathematical structure because quantum mechanics defines "physical state" more leniently than classical mechanics, thereby releasing topological degrees of freedom that were masked by classical physics.
 - **Symmetry (Root):** The universe possesses rotational symmetry, leading to the existence of the Lie algebra $\mathfrak{so}(3) \cong \mathfrak{su}(2)$.
