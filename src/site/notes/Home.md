@@ -4,7 +4,7 @@
 
 Welcome! I'm **Aoyang Qin**.
 
-I'm a PhD student focusing on AI and ML, specifically generative modeling, decision making and representation learning. I also developed [PicWiz](https://picwizai.com/), an intelligent image creation and editing tool, and [Lexevo](https://space.bilibili.com/389014100?spm_id_from=333.1007.0.0), a tool for generating the teaching material of English articles. I share my learning and thoughts here.
+I'm a PhD student focusing on AI and ML, specifically generative modeling, decision making and representation learning. I also developed [PicWiz](https://picwizai.com/), an intelligent image creation and editing tool, and [Lexevo](https://lexevo-web.vercel.app/), a tool for generating the teaching material of English articles. I share my learning and thoughts here, and [Perfy](https://perfy-web.vercel.app/), a tool for auto-spliting image layers, rearranging layouts, and iterating with AI.
 
 ---
 
